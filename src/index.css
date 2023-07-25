@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap'); */
+
 body {
   margin: 0;
-  font-family: "Courier New", 'Courier New', Courier, monospace;
-  -webkit-font-smoothing: antialiased;
+  font-family: 'Outfit', sans-serif;
+    -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
