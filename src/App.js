@@ -9,7 +9,7 @@ function App(){
     return (
       <div className="App text-center">
        <Navigation/>
-
+       
        <Email/>
        {/* <Register/>
        <SignIn/>
