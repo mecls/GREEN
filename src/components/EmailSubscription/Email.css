@@ -6,3 +6,9 @@
     background-color: #CEDFC3;
 }
 
+.text-tcolor-green {
+    background-color: #F4924B;
+}
+.text-tcolor-green:hover {
+    background-color: #ee853a;
+}

@@ -19,7 +19,7 @@ const Logo = () => {
         <div className='ma0 mt1'>
 						<div className='center'>
           <Tilt className='Tilt br2 shadow-2' options={defaultOptions} style={{ height: 100, width: 100 }}>
-             <div className='Tilt-inner pa3'><img style={{padding: '5px'}} src={milho} alt=''/></div>
+             <div className='Tilt-inner pa3' ><img style={{padding: '5px'}} src={milho} alt=''/></div>
          </Tilt>
         </div>
 		</div>
