@@ -1,6 +1,6 @@
 // import React from 'react';
 import Logo from './Logo/Logo.js';
-import { Fragment, useState } from 'react'
+import React,{ Fragment, useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
   ArrowPathIcon,
@@ -22,7 +22,7 @@ const products = [
 ]
 
 const callsToAction = [
-  { name: 'Sign Up', href: '#0', icon: PlayCircleIcon },
+  { name: 'Sign Up', href: '#0' ,icon: PlayCircleIcon },
   { name: 'Contact Us', href: '#0', icon: PhoneIcon },
 ]
 
@@ -31,7 +31,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -80,10 +80,10 @@ export default function Example() {
                         <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
                       </div>
                       <div className="flex-auto">
-                        <a href={item.href} className="block font-semibold text-gray-900">
+                        <p href={item.href} className="block font-semibold text-gray-900">
                           {item.name}
                           <span className="absolute inset-0" />
-                        </a>
+                        </p>
                         <p className="mt-1 text-gray-600">{item.description}</p>
                       </div>
                     </div>
@@ -115,7 +115,7 @@ export default function Example() {
             </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#0" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href='#0' className="text-sm font-semibold leading-6 text-gray-900">
             Log in <span aria-hidden="true">&rarr;</span>
           </a>
         </div>

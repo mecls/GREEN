@@ -6,7 +6,7 @@ import Footer from './components/Footer/Footer';
 /**  @type {import('tailwindcss').Config} */
 
 function App(){
-    return (
+     return (
       <div className="App text-center">
        <Navigation/>
        
@@ -15,7 +15,7 @@ function App(){
        <SignIn/>
        <Profile/>  */}
        <Footer/>
-      </div>
+       </div>
     );
   }
 
