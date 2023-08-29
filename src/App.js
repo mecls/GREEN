@@ -7,15 +7,17 @@ import './App.css';
 import Navigation from './components/Navigation/Navigation';
 import Signin from "./components/Login/SignIn/SignIn";
 import HomePage from "./components/HomePage/HomePage";
+import NotFound from "./components/NotFound";
 // import { Component } from 'react';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Navigation/>}>
+    <Route path="/" element={<Navigation/>} errorElement={<NotFound/>}>
       <Route index element={<HomePage/>}/>
       <Route path="Company"/>
       <Route path="WhyGreen"/>
       <Route path="login" element={<Signin/>}/>
+
     </Route>
   )
 )
