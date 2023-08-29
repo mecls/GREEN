@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../Navigation/Logo/Logo";
+import Logo from "../../Navigation/Logo/Logo";
 function Footer() {
 return(
     <footer className="p-4 bg-white sm:p-6 dark:bg-gray-800">

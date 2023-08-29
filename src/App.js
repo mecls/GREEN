@@ -1,21 +1,27 @@
-import './App.css';
-import Navigation from './components/Navigation/Navigation';
-import Email from './components/EmailSubscription/Email';
-import Footer from './components/Footer/Footer';
-// import { Component } from 'react';
-/**  @type {import('tailwindcss').Config} */
+import {createBrowserRouter, Route, createRoutesFromElements, RouterProvider } from "react-router-dom";
 
+// css
+import './App.css';
+/**  @type {import('tailwindcss').Config} */
+// pages
+import Navigation from './components/Navigation/Navigation';
+import Signin from "./components/Login/SignIn/SignIn";
+import HomePage from "./components/HomePage/HomePage";
+// import { Component } from 'react';
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Navigation/>}>
+      <Route index element={<HomePage/>}/>
+      <Route path="Company"/>
+      <Route path="WhyGreen"/>
+      <Route path="login" element={<Signin/>}/>
+    </Route>
+  )
+)
 function App(){
      return (
-      <div className="App text-center">
-       <Navigation/>
-       
-       <Email/>
-       {/* <Register/>
-       <SignIn/>
-       <Profile/>  */}
-       <Footer/>
-       </div>
+          <RouterProvider router={router}/>
     );
   }
 

@@ -1,6 +1,7 @@
 // import React from 'react';
 import Logo from './Logo/Logo.js';
-import React,{ Fragment, useState } from 'react'
+import './Navigation.css';
+import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
   ArrowPathIcon,
@@ -12,6 +13,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { NavLink, Outlet } from 'react-router-dom';
 
 const products = [
   { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#0', icon: ChartPieIcon },
@@ -22,7 +24,7 @@ const products = [
 ]
 
 const callsToAction = [
-  { name: 'Sign Up', href: '#0' ,icon: PlayCircleIcon },
+  { name: 'Sign Up',icon: PlayCircleIcon },
   { name: 'Contact Us', href: '#0', icon: PhoneIcon },
 ]
 
@@ -38,7 +40,7 @@ export default function Navigation() {
     <header className="bg-white">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href="#0" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Green</span>
            <Logo/>
           </a>
@@ -91,14 +93,10 @@ export default function Navigation() {
                 </div>
                 <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
                   {callsToAction.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
-                    >
-                      <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
-                      {item.name}
-                    </a>
+                   <NavLink to={"login"} className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
+                   <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+                   {item.name}
+              </NavLink>
                   ))}
                 </div>
               </Popover.Panel>
@@ -111,13 +109,15 @@ export default function Navigation() {
               Marketplace
             </a>
             <a href="#0" className="text-sm font-semibold leading-6 text-gray-900 pointer">
-             Company
+              Contact Us
             </a>
         </Popover.Group>
+        
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href='#0' className="text-sm font-semibold leading-6 text-gray-900">
+        <NavLink to={"login"} className="text-sm font-semibold leading-6 text-gray-900">
             Log in <span aria-hidden="true">&rarr;</span>
-          </a>
+          </NavLink>
+
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -177,12 +177,6 @@ export default function Navigation() {
                 >
                   Marketplace
                 </a>
-                <a
-                  href="#0"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Company
-                </a>
               </div>
               <div className="py-6">
               <a
@@ -196,6 +190,7 @@ export default function Navigation() {
           </div>
         </Dialog.Panel>
       </Dialog>
+      <Outlet/>
     </header>
   )
 }
