@@ -13,7 +13,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
-import { NavLink, Outlet } from 'react-router-dom';
+import { Link, NavLink, Outlet } from 'react-router-dom';
 
 const products = [
   { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#0', icon: ChartPieIcon },
@@ -93,24 +93,24 @@ export default function Navigation() {
                 </div>
                 <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
                   {callsToAction.map((item) => (
-                   <NavLink to={"login"} className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
+                   <Link to={"login"} key={item.name} className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
                    <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
                    {item.name}
-              </NavLink>
+              </Link>
                   ))}
                 </div>
               </Popover.Panel>
             </Transition>
           </Popover>
-          <a href="#0" className="text-sm font-semibold leading-6 text-gray-900 pointer">
+          <NavLink to={"whygreen"} className="text-sm font-semibold leading-6 text-gray-900 pointer">
               Why Green?
-            </a>
-            <a href="#0" className="text-sm font-semibold leading-6 text-gray-900 pointer">
+            </NavLink>
+            <NavLink to={"marketplace"} className="text-sm font-semibold leading-6 text-gray-900 pointer">
               Marketplace
-            </a>
-            <a href="#0" className="text-sm font-semibold leading-6 text-gray-900 pointer">
+            </NavLink>
+            <Link to={"contactus"} className="text-sm font-semibold leading-6 text-gray-900 pointer">
               Contact Us
-            </a>
+            </Link>
         </Popover.Group>
         
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -165,18 +165,24 @@ export default function Navigation() {
                     </>
                   )}
                 </Disclosure>
-                <a
-                  href="#0"
+                <NavLink
+                 to={"whygreen"}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                    Why Green?
-                </a>
-                <a
-                  href="#0"
+                </NavLink>
+                <NavLink
+                  to={"marketplace"}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Marketplace
-                </a>
+                </NavLink>
+                <NavLink
+                  to={"contactus"}
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Contact Us
+                </NavLink>
               </div>
               <div className="py-6">
               <a
