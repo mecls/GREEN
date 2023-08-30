@@ -1,0 +1,24 @@
+.text-terciary-yellowish {
+    --tw-text-opacity: 1;
+    color: #F4924B;
+}
+.text-black-bold{
+    --tw-text-opacity: 1;
+    color: black;
+    font-weight: bold;
+}
+.bg-secondary-greenStrong {
+    --tw-text-opacity: 1;
+    background-color: #305041;
+}
+.border-secondary-greenStrong{
+    border-color: #305041;
+}
+.focus\:border-secondary-greenStrong:focus {
+    --tw-border-opacity: 1;
+}
+/* rgb(48, 80, 65) */
+.ContactUs{
+    max-width: 1200px;
+    margin: 90px auto;
+}
