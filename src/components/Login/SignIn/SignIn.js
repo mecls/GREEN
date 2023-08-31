@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Signin = () => {
   return (
@@ -99,9 +100,9 @@ const Signin = () => {
             </a>
             <p className="text-base text-[#adadad]">
               Not a member yet?
-              <a href="/#" className="text-primary hover:underline">
+              <NavLink to={"signup"} className="text-primary hover:underline">
                 Sign Up
-              </a>
+              </NavLink>
             </p>
             <div>
               <span className="absolute top-1 right-1">

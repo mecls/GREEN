@@ -1,71 +1,30 @@
-import './Email.css';
-import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline';
-import React from 'react';
+
 export default function Email() {
   return (
-    <div className="relative isolate overflow-hidden bg-white py-16 sm:py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
-          <div className="max-w-xl lg:max-w-lg">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Subscribe to our newsletter.</h2>
-            <p className="mt-4 text-lg leading-8 text-gray-500">
-              Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing velit quis. Duis tempor incididunt
-              dolore.
-            </p>
-            <div className="mt-6 flex max-w-md gap-x-4">
-              <label htmlFor="email-address" className="sr-only">
-                Email address
-              </label>
-              <input
-                id="email-address"
-                name="email"
-                type="email"
-                autoComplete="email"
-                required
-                className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-gray-500 shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
-                placeholder="Enter your email"
-              />
-              <button
-                type="submit"
-                className="flex-none rounded-md text-tcolor-green px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:text-tcolor-green focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 "
-              >
-                Subscribe
-              </button>
-            </div>
-          </div>
-          <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
-            <div className="flex flex-col items-start">
-              <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
-                <CalendarDaysIcon className="h-6 w-6 text-gray-900" aria-hidden="true" />
+    <div className="Email">
+      <section className=" dark:bg-gray-900">
+  <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+      <div className="mx-auto max-w-screen-md sm:text-center">
+          <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">Sign up for our newsletter</h2>
+          <p className="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">Stay up to date with the roadmap progress, announcements and exclusive discounts feel free to sign up with your email.</p>
+          <form action="post">
+              <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+                  <div className="relative w-full">
+                      <label htmlFor="email" className="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
+                      <input className="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-900 focus:border-primary-900 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-900 dark:focus:border-primary-900" placeholder="Enter your email" type="email" id="email" required={true}/>
+                  </div>
+                  <div>
+                      <button type="submit" className="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-secondary-greenStrong border-primary-900 sm:rounded-none sm:rounded-r-lg hover:bg-primary-900 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Subscribe</button>
+                  </div>
               </div>
-              <dt className="mt-4 font-semibold text-gray-900">Weekly articles</dt>
-              <dd className="mt-2 leading-7 text-gray-500">
-                Non laboris consequat cupidatat laborum magna. Eiusmod non irure cupidatat duis commodo amet.
-              </dd>
-            </div>
-            <div className="flex flex-col items-start">
-              <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
-                <HandRaisedIcon className="h-6 w-6 text-gray-900" aria-hidden="true" />
-              </div>
-              <dt className="mt-4 font-semibold text-gray-900">No spam</dt>
-              <dd className="mt-2 leading-7 text-gray-500">
-                Officia excepteur ullamco ut sint duis proident non adipisicing. Voluptate incididunt anim.
-              </dd>
-            </div>
-          </dl>
-        </div>
+              <div className="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">We care about the protection of your data. <a href="#0" className="font-medium text-terciary-yellowish dark:text-primary-500 hover:underline">Read our Privacy Policy</a>.</div>
+          </form>
       </div>
-      <div className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
-        <div
-          className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#e8a664] to-[#b2f7a4] opacity-30"
-          style={{
-            clipPath:
-              'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-          }}
-        />
-      </div>
+  </div>
+</section>
     </div>
   )
 }
+
 
 

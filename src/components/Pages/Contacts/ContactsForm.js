@@ -12,9 +12,9 @@ export default function ContactUsForm() {
             Contact Us
           </span>
           <h2
-            className="text-dark mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]"
+            className="text-dark mb-6 text-[32px] font-extrabold sm:text-[40px] lg:text-[36px] xl:text-[40px]"
           >
-            GET IN TOUCH WITH US
+            Get In Touch With Us
           </h2>
           <p className="text-body-color mb-9 text-base leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius

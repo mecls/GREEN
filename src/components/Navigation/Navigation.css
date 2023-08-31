@@ -1,11 +1,13 @@
 .body{
   background-color: #F4F4F4;
 }
-
 .tcolor{
   color: #6F706F;
 }
-
+.group:hover .group-hover\:text-terciary-yellowish {
+  --tw-text-opacity: 1;
+  color: rgb(244 146 75 / var(--tw-text-opacity));
+}
 .hover-bg-tcolor:hover{
   background-color: #F4924B;
 }
