@@ -13,9 +13,9 @@ export default function WhyGreen() {
             Why Choose Us
           </span>
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">We didn't reinvent the wheel</h2>
-            <p className="mb-4">We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need. Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need.</p>
-            <p>We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick.</p>
-            <Link to={"login"}
+            <p className="mb-4">We want to help grow and portrait micro and small produtors. Food, Clothes, Beauty, Acessories, you name it. You just need to bee GREEN. Small enough to be simple, quick and care for each costumer, but big enough to deliver the best quality and experience. You take care of the product we take care of the rest. Data, marketing, payments etc...</p>
+            <p>We are GREEN, your growth is our growth. We are a team.</p>
+            <Link to={"/signin"} 
             class="bg-secondary-greenStrong inline-flex items-center justify-center rounded-lg py-4 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10">
             Get Started
           </Link>
@@ -43,8 +43,8 @@ export default function WhyGreen() {
             What We Offer
           </h2>
           <p class="text-body-color text-base">
-            There are many variations of passages of Lorem Ipsum available but
-            the majority have suffered alteration in some form.
+            Because your growth is our growth we give you everything you need. 
+            From inside analytics in your dashboard to a Newsletter to help you improve your product and layout on our page.
           </p>
         </div>
       </div>
@@ -71,11 +71,10 @@ export default function WhyGreen() {
             </svg>
           </div>
           <h4 class="text-dark mb-3 text-xl font-semibold">
-            Refreshing Design
+            Analytics
           </h4>
           <p class="text-body-color">
-            We dejoy working with discerning clients, people for whom qualuty,
-            service, integrity & aesthetics.
+            We give you the analytics you need to improve, see your margins and profits and much more.
           </p>
         </div>
       </div>
@@ -108,11 +107,11 @@ export default function WhyGreen() {
             </svg>
           </div>
           <h4 class="text-dark mb-3 text-xl font-semibold">
-            Based on Tailwind CSS
+            Be at the top
           </h4>
           <p class="text-body-color">
-            We dejoy working with discerning clients, people for whom qualuty,
-            service, integrity & aesthetics.
+           Our Newsletter will help you be at the top of our vendors.
+           With information on Copywriting, Product photos and more.
           </p>
         </div>
       </div>
@@ -148,10 +147,10 @@ export default function WhyGreen() {
               />
             </svg>
           </div>
-          <h4 class="text-dark mb-3 text-xl font-semibold">100+ Components</h4>
+          <h4 class="text-dark mb-3 text-xl font-semibold">Easy and simplyfied</h4>
           <p class="text-body-color">
-            We dejoy working with discerning clients, people for whom qualuty,
-            service, integrity & aesthetics.
+            Create a following or bring your own. We make it easy for you to sell, grow and scale.
+            No need for stress.
           </p>
         </div>
       </div>
@@ -187,10 +186,9 @@ export default function WhyGreen() {
               />
             </svg>
           </div>
-          <h4 class="text-dark mb-3 text-xl font-semibold">Speed Optimized</h4>
+          <h4 class="text-dark mb-3 text-xl font-semibold">Free</h4>
           <p class="text-body-color">
-            We dejoy working with discerning clients, people for whom qualuty,
-            service, integrity & aesthetics.
+            You dont have to pay anything to start. Create an account, login and start to sell.
           </p>
         </div>
       </div>
@@ -215,11 +213,10 @@ export default function WhyGreen() {
             </svg>
           </div>
           <h4 class="text-dark mb-3 text-xl font-semibold">
-            Fully Customizable
+            Something
           </h4>
           <p class="text-body-color">
-            We dejoy working with discerning clients, people for whom qualuty,
-            service, integrity & aesthetics.
+          something Something Something
           </p>
         </div>
       </div>
@@ -249,8 +246,8 @@ export default function WhyGreen() {
           </div>
           <h4 class="text-dark mb-3 text-xl font-semibold">Regular Updates</h4>
           <p class="text-body-color">
-            We dejoy working with discerning clients, people for whom qualuty,
-            service, integrity & aesthetics.
+            We want this to be you center so feel free to contact us if you encounter any problem or would like something implemented.
+            If implemented you will get a month of free service. 
           </p>
         </div>
       </div>

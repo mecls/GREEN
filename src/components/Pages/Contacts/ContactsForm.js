@@ -17,9 +17,9 @@ export default function ContactUsForm() {
             Get In Touch With Us
           </h2>
           <p className="text-body-color mb-9 text-base leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim adiqua
-            minim veniam quis nostrud exercitation ullamco
+            If you have any doubts or questions feel free to reach out to us.
+            Please use the correct email depending on your situation so we can help you as soon as possible.
+            Thanks for your understanding.
           </p>
           <div className="mb-8 flex w-full max-w-[370px]">
             <div
@@ -37,9 +37,9 @@ export default function ContactUsForm() {
               </svg>
             </div>
             <div className="w-full">
-              <h4 className="text-dark mb-1 text-xl font-bold">Our Location</h4>
+              <h4 className="text-dark mb-1 text-xl font-bold">Costumer's Email Address</h4>
               <p className="text-body-color text-base">
-                99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+                help@green.com
               </p>
             </div>
           </div>
@@ -66,7 +66,7 @@ export default function ContactUsForm() {
             </div>
             <div className="w-full">
               <h4 className="text-dark mb-1 text-xl font-bold">Phone Number</h4>
-              <p className="text-body-color text-base">(+62)81 414 257 9980</p>
+              <p className="text-body-color text-base">(+351)936 560 357</p>
             </div>
           </div>
           <div className="mb-8 flex w-full max-w-[370px]">
@@ -85,8 +85,8 @@ export default function ContactUsForm() {
               </svg>
             </div>
             <div className="w-full">
-              <h4 className="text-dark mb-1 text-xl font-bold">Email Address</h4>
-              <p className="text-body-color text-base">info@yourdomain.com</p>
+              <h4 className="text-dark mb-1 text-xl font-bold">Bussiness Email Address</h4>
+              <p className="text-body-color text-base">bussiness@green.com</p>
             </div>
           </div>
         </div>
