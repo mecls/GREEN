@@ -14,10 +14,12 @@ import Faq from "./components/Pages/Contacts/Faq";
 //  import Signin from "./components/Login/SignIn/SignIn";
 //  import SignUp from "./components/Login/SignUp/SignUp";
 
+
 // import { Component } from 'react';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
+    
     <Route path="/" element={<Navigation/>} errorElement={<NotFound/>}>
       <Route index element={<HomePage/>}/>
       <Route path="contactus" element={<ContactUs/>}/>
@@ -29,9 +31,14 @@ const router = createBrowserRouter(
     </Route>
   )
 )
+
+
 function App(){
      return (
+
+      <div>
           <RouterProvider router={router}/>
+      </div>
     );
   }
 

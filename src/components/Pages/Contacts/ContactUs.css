@@ -11,6 +11,10 @@
     color: black;
     font-weight: bold;
 }
+.bg-terciary-yellowish {
+    --tw-text-opacity: 1;
+    background-color: #F4924B;
+}
 .bg-secondary-greenStrong {
     --tw-text-opacity: 1;
     background-color: #305041;

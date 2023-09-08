@@ -1,7 +1,7 @@
 // import React from 'react';
 import Logo from './Logo/Logo.js';
 import './Navigation.css';
-import { Fragment, useState } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
   ArrowPathIcon,
@@ -14,7 +14,9 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import { Link, NavLink, Outlet } from 'react-router-dom';
-
+import i18n from '../../i18n.js';
+import { useTranslation } from 'react-i18next';
+import cookies from 'js-cookie'
 const products = [
   { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#0', icon: ChartPieIcon },
   { name: 'Engagement', description: 'Get more clients with no effort', href: '#0', icon: CursorArrowRaysIcon },
@@ -28,6 +30,18 @@ const callsToAction = [
   { name: 'Contact Us', href: '#0', icon: PhoneIcon },
 ]
 
+const languages =[
+  {
+    code: 'en',
+    name: 'English',
+    country_code: 'gb',
+  },
+  {
+    code: 'pt',
+    name: 'Portuguese',
+    country_code: 'pt'
+  }
+]
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -35,7 +49,15 @@ function classNames(...classes) {
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const currentLanguageCode = cookies.get('i18n') || 'en';
+  const currentLanguage = languages.find((l)=> l.code === currentLanguageCode)
+  const {t} = useTranslation();
 
+  useEffect(()=>{
+    console.log('setting page stuff')
+    document.body.dir = currentLanguage.dir || 'ltr'
+    document.title = t('app_title')
+  }, [currentLanguage, t])
   return (
     <header className="bg-white">
       <nav className=" mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
@@ -112,14 +134,6 @@ export default function Navigation() {
                     </div>
                   ))}
                 </div>
-                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-                  {callsToAction.map((item) => (
-                   <Link to={"login"} key={item.name} className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
-                   <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
-                   {item.name}
-              </Link>
-                  ))}
-                </div>
               </Popover.Panel>
             </Transition>
           </Popover>
@@ -133,7 +147,6 @@ export default function Navigation() {
               Contact Us
             </Link>
         </Popover.Group>
-        
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
         <NavLink to={"signin"} className="text-sm font-semibold leading-6 text-gray-900">
             Log in <span aria-hidden="true">&rarr;</span>
