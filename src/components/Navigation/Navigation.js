@@ -61,10 +61,9 @@ export default function Navigation() {
   return (
     <header className="bg-white">
       <nav className=" mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <div className="flex lg:flex-1  mb-0 mt-3 h-[50px] w-[50px] items-center justify-center rounded-2xl">
-          <a href='/' className="-m-1.5 p-0">
+        <div className="md:flex lg:flex-1 mb-6 md:mb-0 mt-3 h-[50px] w-[50px] items-center justify-center rounded-2xl">
+          <Link to={"/"} className="-m-1.5 p-0">
             <span className="sr-only">Green</span>
-           {/* <Logo/> */}
            <svg width="178" height="86" viewBox="0 0 178 86" fill="none" xmlns="http://www.w3.org/2000/svg" >
 <g filter="url(#filter0_d_530_36)">
 <path d="M17.616 36.396C15.672 36.396 13.872 36.072 12.216 35.424C10.584 34.752 9.144 33.816 7.896 32.616C6.672 31.416 5.712 30.024 5.016 28.44C4.344 26.832 4.008 25.092 4.008 23.22C4.008 21.324 4.356 19.584 5.052 18C5.772 16.392 6.768 15 8.04 13.824C9.312 12.624 10.788 11.7 12.468 11.052C14.172 10.38 15.984 10.044 17.904 10.044C20.184 10.044 22.248 10.452 24.096 11.268C25.944 12.06 27.444 13.164 28.596 14.58L24.276 18.9C23.412 17.868 22.464 17.1 21.432 16.596C20.4 16.068 19.2 15.804 17.832 15.804C16.44 15.804 15.192 16.116 14.088 16.74C13.008 17.34 12.144 18.192 11.496 19.296C10.848 20.4 10.524 21.696 10.524 23.184C10.524 24.672 10.824 25.98 11.424 27.108C12.048 28.236 12.888 29.112 13.944 29.736C15.024 30.36 16.26 30.672 17.652 30.672C19.044 30.672 20.22 30.408 21.18 29.88C22.164 29.352 22.908 28.584 23.412 27.576C23.94 26.568 24.204 25.368 24.204 23.976L28.56 26.784L16.932 26.496V21.24H30.684V22.212C30.684 25.26 30.132 27.84 29.028 29.952C27.924 32.064 26.388 33.672 24.42 34.776C22.476 35.856 20.208 36.396 17.616 36.396ZM38.8566 25.668V21.06H43.7166C44.7726 21.06 45.5766 20.808 46.1286 20.304C46.7046 19.776 46.9926 19.068 46.9926 18.18C46.9926 17.316 46.7046 16.62 46.1286 16.092C45.5766 15.54 44.7726 15.264 43.7166 15.264H38.8566V10.476H44.6166C46.3446 10.476 47.8566 10.8 49.1526 11.448C50.4726 12.096 51.5046 12.984 52.2486 14.112C52.9926 15.24 53.3646 16.56 53.3646 18.072C53.3646 19.584 52.9806 20.916 52.2126 22.068C51.4686 23.196 50.4246 24.084 49.0806 24.732C47.7366 25.356 46.1646 25.668 44.3646 25.668H38.8566ZM33.7446 36V10.476H40.1886V36H33.7446ZM47.5686 36L40.1526 25.056L45.9486 23.652L55.0206 36H47.5686ZM57.1235 36V10.476H63.5675V36H57.1235ZM62.2355 36V30.564H76.0595V36H62.2355ZM62.2355 25.632V20.34H74.7635V25.632H62.2355ZM62.2355 15.912V10.476H75.8435V15.912H62.2355ZM79.6938 36V10.476H86.1378V36H79.6938ZM84.8058 36V30.564H98.6298V36H84.8058ZM84.8058 25.632V20.34H97.3338V25.632H84.8058ZM84.8058 15.912V10.476H98.4138V15.912H84.8058ZM102.264 36V10.476H106.764L108.708 15.696V36H102.264ZM119.868 36L104.964 17.064L106.764 10.476L121.704 29.412L119.868 36ZM119.868 36L118.212 30.636V10.476H124.656V36H119.868Z" fill="#645537"/>
@@ -85,8 +84,7 @@ export default function Navigation() {
 </filter>
 </defs>
 </svg>
-
-          </a>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -158,10 +156,7 @@ export default function Navigation() {
             <Link to={"contactus"} className="text-sm font-semibold leading-6 text-gray-900 pointer" >
               Contact Us
             </Link>
-
-        </Popover.Group>
-
-        <Popover className="relative ml-12">
+            <Popover className="relative ml-12">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
               Languages
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
@@ -203,6 +198,9 @@ export default function Navigation() {
             </Transition>
           </Popover>
 
+        </Popover.Group>
+
+       
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
         <NavLink to={"signin"} className="text-sm font-semibold leading-6 text-gray-900">
             Log in <span aria-hidden="true">&rarr;</span>
@@ -215,7 +213,7 @@ export default function Navigation() {
           <div className="flex items-center justify-between">
             <a href="#00" className="-m-1.5 p-1.5">
               <span className="sr-only">Green</span>
-              <Logo/>
+           <Logo/>
             </a>
             <button
               type="button"
@@ -233,7 +231,7 @@ export default function Navigation() {
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Product
+                        Seller
                         <ChevronDownIcon
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
                           aria-hidden="true"
@@ -272,7 +270,35 @@ export default function Navigation() {
                 >
                   Contact Us
                 </NavLink>
+                <Disclosure as="div" className="-mx-3">
+                  {({ open }) => (
+                    <>
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                        Languages
+                        <ChevronDownIcon
+                          className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
+                          aria-hidden="true"
+                        />
+                      </Disclosure.Button>
+                      <Disclosure.Panel className="mt-2 space-y-2">
+                        {languages.map((item) => (
+                          <Disclosure.Button
+                            key={item.country_code}
+                            as="a"
+                            onClick={() => {
+                              i18n.changeLanguage(item.code)
+                            }}
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                          >
+                            {item.name}
+                          </Disclosure.Button>
+                        ))}
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
               </div>
+
               <div className="py-6">
               <a
                   href="#00"
