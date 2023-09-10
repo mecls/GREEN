@@ -1,6 +1,22 @@
     {
-        "app_title": "Title",
+        "app_title": "Green Marketplace",
         "language": "Language",
-        "feature_sectionH1": "Find truly organic produts and help micro and small produtors"
-
+        "hero_section_h1": "An Organic Marketplace For You!" ,
+        "hero_section_p1": "Food, Clothes, Beauty, Acessories. Everything is truly GREEN!" ,
+        "navlink_1": " Get started",
+        "navlink_2": "Speak With Us",
+        "feature_section_h2": "Find truly organic produts and help micro and small produtors",
+        "feature_section_p1": "Consume more without worring about the planet. We help you with that!",
+        "1_feature_section_h3": "Food",
+        "feature_section_p2": "Honey, Jam, Syrup, and much more. All natural!",
+        "2_feature_section_h3": "Acessories",
+        "feature_section_p3": "Baskets, pots, vases etc. Just need's to be organic and you can sell it here with no effort.",
+        "3_feature_section_h3": "Become a Seller",
+        "feature_section_p4": "You need 0 effort to become a seller. Just create an account, login and start to sell. You don't need to pay anything to start.",
+        "4_feature_section_h3": "Products",
+        "feature_section_p5": "All products must be organic with no pesticides, gluten-free and made with love.",
+        "5_feature_section_h3": "Save te Earth",
+        "feature_section_p6": "Every month we give 15% of our revenue to ONG's as for charity. Litle by litle let's make the world a litle bit better!",
+        "6_feature_section_h3": "Operations",
+        "feature_section_p7": "Keep your company’s lights on with customizable, iterative, and structured workflows built for all efficient teams and individual."
     }

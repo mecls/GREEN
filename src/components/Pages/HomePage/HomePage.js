@@ -3,6 +3,7 @@ import Footer from "./Footer/Footer";
 import Email from "./EmailSubscription/Email";
 import HeroSection from "./Hero/HeroSection";
 import FeatureSection from "./FeatureSection/FeatureSection";
+// import LogoClouds from "./LogoClouds/LogoClouds";
 
 
 export default function HomePage() {
@@ -11,6 +12,7 @@ export default function HomePage() {
         <HeroSection/>
         <FeatureSection/>
         <Email/>
+        {/* <LogoClouds/> */}
         <Footer/>
     </div>
   )

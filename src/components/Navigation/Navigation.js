@@ -12,7 +12,7 @@ import {
   SquaresPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { ChevronDownIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import { Link, NavLink, Outlet } from 'react-router-dom';
 import i18n from '../../i18n.js';
 import { useTranslation } from 'react-i18next';
@@ -27,7 +27,6 @@ const products = [
 
 const callsToAction = [
   { name: 'Sign Up',icon: PlayCircleIcon },
-  { name: 'Contact Us', href: '#00', icon: PhoneIcon },
 ]
 
 const languages =[
@@ -135,6 +134,18 @@ export default function Navigation() {
                     </div>
                   ))}
                 </div>
+                <div className="grid divide-gray-900/5 bg-gray-50">
+                  {callsToAction.map((item) => (
+                    <Link
+                      key={item.name}
+                     to={"signin"}
+                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                    >
+                      <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
               </Popover.Panel>
             </Transition>
           </Popover>
@@ -187,6 +198,7 @@ export default function Navigation() {
                     </div>
                   ))}
                 </div>
+           
               </Popover.Panel>
             </Transition>
           </Popover>

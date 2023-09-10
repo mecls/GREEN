@@ -1,5 +1,23 @@
 {
-    "app_title": "Titulo",
+    "app_title": "Green Marketplace",
     "language": "Lingua",
-    "feature_sectionH1": "Encontra produtos realmente organicos e ajuda micro e pequenos produtores"
+    "hero_section_h1": "Um Marketplace Organico Para Ti" ,
+    "hero_section_p1": "Comida, Roupa, Cosméticos, Acessórios. Tudo verdadeiramente GREEN!" ,
+    "navlink_1": "Começa Agora",
+    "navlink_2": "Fala Conosco",
+    "feature_section_h2": "Encontra produtos realmente organicos e ajuda micro e pequenos produtores",
+    "feature_section_p1": "Consome mais sem preocupação. Aqui toda a comida é organica. Nós ajudamos-te com isso!",
+    "1_feature_section_h3": "Comida",
+    "feature_section_p2": "Mel, Doçe, bolos, e muito mais. Tudo natural",
+    "2_feature_section_h3": "Acessórios",
+    "feature_section_p3": "Cestos, vasos, roupa etc.. Só precisa de ser organico e podes começar a vender sem esforço",
+    "3_feature_section_h3": "Torna-te um Vendedor",
+    "feature_section_p4": "Precisas de 0 esforço para te tornares um vendedor. Apenas criar uma conta, iniciar sessão e já está! O melhor de tudo? Não precisas de pagar nada para começar a vender.",
+    "4_feature_section_h3": "Sobre os Produtos",
+    "feature_section_p5": "Todos os produtos devem ser 100% organicos sem pesticidas e gluten-free. ",
+    "5_feature_section_h3": "Ajuda o planeta",
+    "feature_section_p6": "Todos os meses doamos 15% dos nossos lucros para causas que ajudem o planeta! Pouco a pouco, juntos, fazemos o mundo um pouco melhor!",
+    "6_feature_section_h3": "Operations",
+    "feature_section_p7": "Keep your company’s lights on with customizable, iterative, and structured workflows built for all efficient teams and individual."
+
 }
