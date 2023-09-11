@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import Email from "../HomePage/EmailSubscription/Email";
 import Footer from "../HomePage/Footer/Footer";
+import { useTranslation } from "react-i18next";
 
 export default function WhyGreen() {
+  const {t} = useTranslation();
   return (
     <div>
       {/* <!-- ====== About Section Start --> */}
@@ -10,14 +12,14 @@ export default function WhyGreen() {
     <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
         <span class="text-terciary-yellowish mb-2 block text-lg font-semibold">
-            Why Choose Us
+            {t("whygreen_span")}
           </span>
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">We didn't reinvent the wheel</h2>
-            <p className="mb-4">We want to help grow and portrait micro and small produtors. Food, Clothes, Beauty, Acessories, you name it. You just need to bee GREEN. Small enough to be simple, quick and care for each costumer, but big enough to deliver the best quality and experience. You take care of the product we take care of the rest. Data, marketing, payments etc...</p>
-            <p>We are GREEN, your growth is our growth. We are a team.</p>
+            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"> {t("whygreen_h2")}</h2>
+            <p className="mb-4"> {t("1_whygreen_p")}</p>
+            <p> {t("2_whygreen_p")}</p>
             <Link to={"/signin"} 
             class="bg-secondary-greenStrong inline-flex items-center justify-center rounded-lg py-4 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10">
-            Get Started
+           {t("whygreen_link")}
           </Link>
         </div>
         <div className="grid grid-cols-2 gap-4 mt-8">
@@ -35,16 +37,15 @@ export default function WhyGreen() {
       <div class="w-full px-4">
         <div class="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
           <span class="text-terciary-yellowish mb-2 block text-lg font-semibold">
-            Our Services
+          {t("whygreen_services_span")}
           </span>
           <h2
             class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]"
           >
-            What We Offer
+            {t("whygreen_services_h2")}
           </h2>
           <p class="text-body-color text-base">
-            Because your growth is our growth we give you everything you need. 
-            From inside analytics in your dashboard to a Newsletter to help you improve your product and layout on our page.
+          {t("1_whygreen_services_p")}
           </p>
         </div>
       </div>
@@ -71,10 +72,10 @@ export default function WhyGreen() {
             </svg>
           </div>
           <h4 class="text-dark mb-3 text-xl font-semibold">
-            Analytics
+            {t("1_whygreen_services_h4")}
           </h4>
           <p class="text-body-color">
-            We give you the analytics you need to improve, see your margins and profits and much more.
+           {t("2_whygreen_services_p")}
           </p>
         </div>
       </div>
@@ -107,11 +108,10 @@ export default function WhyGreen() {
             </svg>
           </div>
           <h4 class="text-dark mb-3 text-xl font-semibold">
-            Be at the top
+            {t("3_whygreen_services_h4")}
           </h4>
           <p class="text-body-color">
-           Our Newsletter will help you be at the top of our vendors.
-           With information on Copywriting, Product photos and more.
+          {t("4_whygreen_services_p")}
           </p>
         </div>
       </div>
@@ -147,10 +147,9 @@ export default function WhyGreen() {
               />
             </svg>
           </div>
-          <h4 class="text-dark mb-3 text-xl font-semibold">Easy and simplyfied</h4>
+          <h4 class="text-dark mb-3 text-xl font-semibold">{t("4_whygreen_services_h4")}</h4>
           <p class="text-body-color">
-            Create a following or bring your own. We make it easy for you to sell, grow and scale.
-            No need for stress.
+           {t("5_whygreen_services_p")}
           </p>
         </div>
       </div>
@@ -186,9 +185,9 @@ export default function WhyGreen() {
               />
             </svg>
           </div>
-          <h4 class="text-dark mb-3 text-xl font-semibold">Free</h4>
+          <h4 class="text-dark mb-3 text-xl font-semibold">{t("6_whygreen_services_h4")}</h4>
           <p class="text-body-color">
-            You dont have to pay anything to start. Create an account, login and start to sell.
+           {t("7_whygreen_services_p")}
           </p>
         </div>
       </div>
@@ -213,10 +212,10 @@ export default function WhyGreen() {
             </svg>
           </div>
           <h4 class="text-dark mb-3 text-xl font-semibold">
-            Something
+            {t("7_whygreen_services_h4")}
           </h4>
           <p class="text-body-color">
-          something Something Something
+       {t("8_whygreen_services_p")}
           </p>
         </div>
       </div>
@@ -244,10 +243,9 @@ export default function WhyGreen() {
               />
             </svg>
           </div>
-          <h4 class="text-dark mb-3 text-xl font-semibold">Regular Updates</h4>
+          <h4 class="text-dark mb-3 text-xl font-semibold">{t("8_whygreen_services_h4")}</h4>
           <p class="text-body-color">
-            We want this to be you center so feel free to contact us if you encounter any problem or would like something implemented.
-            If implemented you will get a month of free service. 
+          {t("9_whygreen_services_p")}
           </p>
         </div>
       </div>

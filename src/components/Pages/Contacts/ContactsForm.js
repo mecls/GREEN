@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import "./ContactUs.css";
 // import { Form } from 'react-router-dom'
 export default function ContactUsForm() {
+  const {t} = useTranslation();
   return (
     <div >
  {/* <!-- ====== Contact Section Start --> */}
@@ -9,17 +11,15 @@ export default function ContactUsForm() {
       <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
         <div className="mb-12 max-w-[570px] lg:mb-0">
           <span className="text-terciary-yellowish mb-4 block text-base font-semibold">
-            Contact Us
+            {t("1_contacts_span")}
           </span>
           <h2
             className="text-dark mb-6 text-[32px] font-extrabold sm:text-[40px] lg:text-[36px] xl:text-[40px]"
           >
-            Get In Touch With Us
+            {t("contacts_h2")}
           </h2>
           <p className="text-body-color mb-9 text-base leading-relaxed">
-            If you have any doubts or questions feel free to reach out to us.
-            Please use the correct email depending on your situation so we can help you as soon as possible.
-            Thanks for your understanding.
+            {t("1_contacts_p")}
           </p>
           <div className="mb-8 flex w-full max-w-[370px]">
             <div
@@ -37,10 +37,9 @@ export default function ContactUsForm() {
               </svg>
             </div>
             <div className="w-full">
-              <h4 className="text-dark mb-1 text-xl font-bold">Costumer's Email Address</h4>
+              <h4 className="text-dark mb-1 text-xl font-bold">{t("1_contacts_h4")}</h4>
               <p className="text-body-color text-base">
-                help@green.com
-              </p>
+              help@green.com              </p>
             </div>
           </div>
           <div className="mb-8 flex w-full max-w-[370px]">
@@ -65,7 +64,7 @@ export default function ContactUsForm() {
               </svg>
             </div>
             <div className="w-full">
-              <h4 className="text-dark mb-1 text-xl font-bold">Phone Number</h4>
+              <h4 className="text-dark mb-1 text-xl font-bold">{t("2_contacts_h4")}</h4>
               <p className="text-body-color text-base">(+351)936 560 357</p>
             </div>
           </div>
@@ -85,7 +84,7 @@ export default function ContactUsForm() {
               </svg>
             </div>
             <div className="w-full">
-              <h4 className="text-dark mb-1 text-xl font-bold">Bussiness Email Address</h4>
+              <h4 className="text-dark mb-1 text-xl font-bold">{t("3_contacts_h4")}</h4>
               <p className="text-body-color text-base">bussiness@green.com</p>
             </div>
           </div>
@@ -97,7 +96,7 @@ export default function ContactUsForm() {
             <div className="mb-6">
               <input
                 type="text"
-                placeholder="Your Name"
+                placeholder={t("placeholder_name")}
                 required={true}
                 className="text-body-color border-[f0f0f0] focus:border-secondary-greenStrong w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
               />
@@ -105,7 +104,7 @@ export default function ContactUsForm() {
             <div className="mb-6">
               <input
                 type="email"
-                placeholder="Your Email"
+                placeholder={t("placeholder_email")}
                 required={true}
                 className="text-body-color border-[f0f0f0] focus:border-secondary-greenStrong w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
               />
@@ -113,7 +112,7 @@ export default function ContactUsForm() {
             <div className="mb-6">
               <input
                 type="text"
-                placeholder="Your Phone"
+                placeholder={t("placeholder_phone")}
                 required={false}
                 className="text-body-color border-[305041] focus:border-secondary-greenStrong w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
               />
@@ -121,7 +120,7 @@ export default function ContactUsForm() {
             <div className="mb-6">
               <textarea
                 rows="6"
-                placeholder="Your Message"
+                placeholder={t("placeholder_message")}
                 required={true}
                 className="text-body-color border-[f0f0f0] focus:border-secondary-greenStrong w-full resize-none rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
               ></textarea>
@@ -131,7 +130,7 @@ export default function ContactUsForm() {
                 type="submit"
                 className="bg-secondary-greenStrong text-white border-secondary-greenStrong w-full rounded border p-3 transition hover:bg-opacity-90"
               >
-                Send Message
+                  {t("contacts_button_send")}           
               </button>
             </div>
           </form>

@@ -39,6 +39,31 @@
     "4_footer_a": "Termos & Condições",
     "footer_rights_1": "© 2023",
     "footer_rights_2": "GREEN™",
-    "footer_rights_3": " TODOS os Direitos Reservados."
-    
+    "footer_rights_3": " TODOS os Direitos Reservados.",
+    "404_p1": "Está a faltar alguma coisa!",
+    "404_p2": "Desculpa mas não conseguimos encontrar esta página. Vais encontrar muito para descobrir na página principal.",
+    "404_link": "Voltar para a página Principal",
+    "1_contacts_span": "Contacte-nos",
+    "contacts_h2": "Fale conosco",
+    "1_contacts_p": "Se tiveres algum problema ou questão não tenhas problemas em falar conosco. Por favor usa o email correto dependendo da tua situação para que te possamos ajudar o mais rápido possível. Obrigado pela compreensão.",
+    "1_contacts_h4": "Endereço Email Para Clientes",
+    "2_contacts_h4": "Número de telémovel",
+    "3_contacts_h4": "Endereço de Email Para Negócios",
+    "placeholder_name": "O teu nome",
+    "placeholder_email": "O teu email",
+    "placeholder_phone": "O teu numero de telémovel",
+    "placeholder_message": "A tua mensagem",
+    "contacts_button_send": "Enviar Mensagem",
+    "whygreen_span": "Porquê escolher-nos",
+    "whygreen_h2": "Nós não inventámos a roda",
+    "1_whygreen_p": "We want to help grow and portrait micro and small produtors. Food, Clothes, Beauty, Acessories, you name it. You just need to bee GREEN. Small enough to be simple, quick and care for each costumer, but big enough to deliver the best quality and experience. You take care of the product we take care of the rest. Data, marketing, payments etc...",
+    "2_whygreen_p": "We are GREEN, your growth is our growth. We are a team.",
+    "whygreen_link": "Get Started"
+
+
+
+
+
+
+
 }
