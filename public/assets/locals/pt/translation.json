@@ -1,6 +1,10 @@
 {
     "app_title": "Green Marketplace",
     "language": "Lingua",
+    "nav_seller": "Vendedor",
+    "nav_whygreen" : "Porquê a Green?",
+    "nav_contact" : "Fala Conosco",
+    "nav_languages" : "Linguagem",
     "hero_section_h1": "Um Marketplace Organico Para Ti" ,
     "hero_section_p1": "Comida, Roupa, Cosméticos, Acessórios. Tudo verdadeiramente GREEN!" ,
     "navlink_1": "Começa Agora",

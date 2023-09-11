@@ -18,11 +18,11 @@ import i18n from '../../i18n.js';
 import { useTranslation } from 'react-i18next';
 import cookies from 'js-cookie';
 const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#00', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Get more clients with no effort', href: '#00', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your data will be safe and secure', href: '#00', icon: FingerPrintIcon },
-  { name: 'Free', description: 'No costs to start - 10% fee on trasanctions', href: '#00', icon: SquaresPlusIcon },
-  { name: 'Payments', description: 'Get payed througth paypal, mbway, credit/debit card and more without effort', href: '#00', icon: ArrowPathIcon },
+  { name: 'Analytics', description: 'Get a better understanding of your traffic',  icon: ChartPieIcon },
+  { name: 'Engagement', description: 'Get more clients with no effort', icon: CursorArrowRaysIcon },
+  { name: 'Security', description: 'Your data will be safe and secure', icon: FingerPrintIcon },
+  { name: 'Free', description: 'No costs to start - 10% fee on trasanctions', icon: SquaresPlusIcon },
+  { name: 'Payments', description: 'Get payed througth paypal, mbway, credit/debit card and more without effort', icon: ArrowPathIcon },
 ]
 
 const callsToAction = [
@@ -99,7 +99,7 @@ export default function Navigation() {
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-              Seller
+              {t("nav_seller")}
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </Popover.Button>
 
@@ -148,17 +148,17 @@ export default function Navigation() {
             </Transition>
           </Popover>
           <NavLink to={"whygreen"} className="text-sm font-semibold leading-6 text-gray-900 pointer">
-              Why Green?
+              {t("nav_whygreen")}
             </NavLink>
             <NavLink to={"marketplace"} className="text-sm font-semibold leading-6 text-gray-900 pointer">
-              Marketplace
+            Marketplace
             </NavLink>
             <Link to={"contactus"} className="text-sm font-semibold leading-6 text-gray-900 pointer" >
-              Contact Us
+            {t("nav_contact")} 
             </Link>
             <Popover className="relative ml-12">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-              Languages
+            {t("nav_languages")}
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </Popover.Button>
 
@@ -231,7 +231,7 @@ export default function Navigation() {
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Seller
+                        {t("nav_seller")}
                         <ChevronDownIcon
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
                           aria-hidden="true"
@@ -256,7 +256,7 @@ export default function Navigation() {
                  to={"whygreen"}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                   Why Green?
+                   {t("nav_whygreen")}
                 </NavLink>
                 <NavLink
                   to={"marketplace"}
@@ -268,13 +268,13 @@ export default function Navigation() {
                   to={"contactus"}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Contact Us
+                   {t("nav_contact")}
                 </NavLink>
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Languages
+                      {t("nav_languages")}
                         <ChevronDownIcon
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
                           aria-hidden="true"
