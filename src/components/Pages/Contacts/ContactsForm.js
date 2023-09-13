@@ -2,14 +2,15 @@ import { useTranslation } from "react-i18next";
 import "./ContactUs.css";
 import axios from "axios";
 import { useState } from "react";
+// import emailjs from '@emailjs/browser';
 // import { Form } from 'react-router-dom'
 export default function ContactUsForm() {
 
-  const [recipient_email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessages] = useState("");
-  const [name, setName] = useState("");
-  const [phone_number, setPhone] = useState("");
+  const [recipient_email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessages] = useState('');
+  const [name, setName] = useState('');
+  const [phone_number, setPhone] = useState('');
   const {t} = useTranslation();
 
 function sendEmail(){
@@ -28,7 +29,33 @@ function sendEmail(){
   }else{
     return alert("Fill in the fields requireds");
   }
-  }
+
+
+   // if(recipient_email === '' && subject === ''  && message === ''  && name === ''  && phone_number === '' ){
+  //    alert("Fill in the fields requireds");
+  //    return;
+  // }
+  // else{
+
+  //   const templateParams ={
+  //     from_name: name,
+  //     message: message,
+  //     phone_number: phone_number,
+  //     email: recipient_email
+  //   }
+  
+  //     emailjs.send("service_wb82mbj","template_3hhawub", templateParams,"cUwPNbYIERLQjfccd")
+  //     .then((response)=>{
+  //       console.log("EMAIL ENVIADO", response.status, response.text)
+  //       setName('')
+  //       setEmail('')
+  //       setMessages('')
+  //       setPhone('')
+  //       setSubject('')
+  //     }, (err)=> {
+  //       console.log("ERROR: ", err)
+  //     })
+}
   
 
   return (
@@ -120,7 +147,7 @@ function sendEmail(){
       </div>
       <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
         <div className="relative rounded-lg bg-white p-8 shadow-lg sm:p-12">
-          <form >
+          <form onSubmit={sendEmail} >
             <div className="mb-6">
               <input
                 type="text"
@@ -173,7 +200,6 @@ function sendEmail(){
             <div>
               <button
                 type="submit"
-                onClick={()=> sendEmail()}
                 className="bg-secondary-greenStrong text-white border-secondary-greenStrong w-full rounded border p-3 transition hover:bg-opacity-90"
               >
                   {t("contacts_button_send")}           
