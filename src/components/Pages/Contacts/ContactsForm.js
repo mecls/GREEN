@@ -39,6 +39,7 @@ function sendEmail(){
 
   //   const templateParams ={
   //     from_name: name,
+  //     subject: subject,
   //     message: message,
   //     phone_number: phone_number,
   //     email: recipient_email
