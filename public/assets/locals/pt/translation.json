@@ -50,6 +50,7 @@
     "2_contacts_h4": "Número de telémovel",
     "3_contacts_h4": "Endereço de Email Para Negócios",
     "placeholder_name": "O teu nome",
+    "placeholder_subject": "O Assunto",
     "placeholder_email": "O teu email",
     "placeholder_phone": "O teu numero de telémovel",
     "placeholder_message": "A tua mensagem",

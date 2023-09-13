@@ -1,8 +1,36 @@
 import { useTranslation } from "react-i18next";
 import "./ContactUs.css";
+import axios from "axios";
+import { useState } from "react";
 // import { Form } from 'react-router-dom'
 export default function ContactUsForm() {
+
+  const [recipient_email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessages] = useState("");
+  const [name, setName] = useState("");
+  const [phone_number, setPhone] = useState("");
   const {t} = useTranslation();
+
+function sendEmail(){
+  console.log("sending email");
+
+  if(recipient_email && subject && message && name && phone_number){
+    axios.post("http://localhost:3001/send_email",{
+      recipient_email,
+      subject,
+      name,
+      message,
+      phone_number
+    }).then(()=> alert("Message Send successfuly"))
+      .catch(()=> alert("Ops something went wrong."));
+      return;
+  }else{
+    return alert("Fill in the fields requireds");
+  }
+  }
+  
+
   return (
     <div >
  {/* <!-- ====== Contact Section Start --> */}
@@ -96,7 +124,19 @@ export default function ContactUsForm() {
             <div className="mb-6">
               <input
                 type="text"
+                id="name"
                 placeholder={t("placeholder_name")}
+                onChange={(e) => setName(e.target.value)}
+                required={true}
+                className="text-body-color border-[f0f0f0] focus:border-secondary-greenStrong w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
+              />
+            </div>
+            <div className="mb-6">
+              <input
+                type="text"
+                id="subject"
+                onChange={(e) => setSubject(e.target.value)}
+                placeholder={t("placeholder_subject")}
                 required={true}
                 className="text-body-color border-[f0f0f0] focus:border-secondary-greenStrong w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
               />
@@ -104,6 +144,8 @@ export default function ContactUsForm() {
             <div className="mb-6">
               <input
                 type="email"
+                id="email"
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder={t("placeholder_email")}
                 required={true}
                 className="text-body-color border-[f0f0f0] focus:border-secondary-greenStrong w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
@@ -112,6 +154,8 @@ export default function ContactUsForm() {
             <div className="mb-6">
               <input
                 type="text"
+                id="phone"
+                onChange={(e) => setPhone(e.target.value)}
                 placeholder={t("placeholder_phone")}
                 required={false}
                 className="text-body-color border-[305041] focus:border-secondary-greenStrong w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
@@ -120,6 +164,7 @@ export default function ContactUsForm() {
             <div className="mb-6">
               <textarea
                 rows="6"
+                onChange={(e) => setMessages(e.target.value)}
                 placeholder={t("placeholder_message")}
                 required={true}
                 className="text-body-color border-[f0f0f0] focus:border-secondary-greenStrong w-full resize-none rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
@@ -128,6 +173,7 @@ export default function ContactUsForm() {
             <div>
               <button
                 type="submit"
+                onClick={()=> sendEmail()}
                 className="bg-secondary-greenStrong text-white border-secondary-greenStrong w-full rounded border p-3 transition hover:bg-opacity-90"
               >
                   {t("contacts_button_send")}           

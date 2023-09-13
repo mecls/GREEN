@@ -50,6 +50,7 @@
         "2_contacts_h4": "Phone Number",
         "3_contacts_h4": " Bussiness Email Address",
         "placeholder_name": "Your Name",
+        "placeholder_subject": "The Subject",
         "placeholder_email": "Your Email",
         "placeholder_phone": "Your Phone",
         "placeholder_message": "Your Message",
