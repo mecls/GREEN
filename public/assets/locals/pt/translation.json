@@ -29,8 +29,9 @@
     "email_underSubmmit1": "Nós importamos-nos com a proteção dos seus dados.",
     "email_underSubmmit2": " Lê a nossa Politica de Privacidade",
     "1_footer_h2": "Sobre Nós",
-    "link_1": "Faq",
+    "link_1": "Faq Clientes",
     "link_2": "Porque a Green?",
+    "link_3": "Faq Produtores",
     "2_footer_h2": "Segue-nos",
     "1_footer_a": "Twitter",
     "2_footer_a": "Instagram",
@@ -59,12 +60,17 @@
     "whygreen_h2": "Nós não inventámos a roda",
     "1_whygreen_p": "We want to help grow and portrait micro and small produtors. Food, Clothes, Beauty, Acessories, you name it. You just need to bee GREEN. Small enough to be simple, quick and care for each costumer, but big enough to deliver the best quality and experience. You take care of the product we take care of the rest. Data, marketing, payments etc...",
     "2_whygreen_p": "We are GREEN, your growth is our growth. We are a team.",
-    "whygreen_link": "Get Started"
-
-
-
-
-
-
+    "whygreen_link": "Get Started",
+    "faq_h2_p": "Perguntas frequentes dos nossos produtores",
+    "faq_h2_c": "Perguntas frequentes dos nossos utilizadores",
+    "faq_h3_1_p": "Qual é a data de lançamento? ",
+    "faq_p_1":"Nós pretendemos lançar por volta de 10 de Novembro, esta data vai depender de alguns fatores mas não será muito longe da mesma. Fica avontade para te inscreveres na nossa Newsletter para garantir que és notificado quando abrirmos e recebe um desconto de 10% na tua primeira compra.",
+    "faq_h3_2_p": "Vocês ajudam com o empacotamento e envio?",
+    "faq_p_2": "Ajudamos, apesar de não ser o nosso foco. O nosso objetivo é ajudar-te a crescer e ser autónomo, mas se no ínicio precisares da nossa ajuda envia-nos um email ou liga-nos e nós iremos ajudar.",
+    "faq_h3_3_p": "Como é que funciona o vosso suporte?",
+    "faq_p_3": "Nós reconheçemos a importância de um suporte de qualidade, assim sendo decidimos que daremos suporte em todos os aspetos necessários 24/7.",
+    "faq_p_4.1": "Fica à vontade para ",
+    "faq_p_4.2": "nos contactar ",
+    "faq_p_4.3": "e nós iremos ajudar assim que possível."
 
 }

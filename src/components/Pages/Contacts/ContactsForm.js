@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import "./ContactUs.css";
-import axios from "axios";
+// import axios from "axios";
 import { useState } from "react";
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 // import { Form } from 'react-router-dom'
 export default function ContactUsForm() {
 
@@ -14,51 +14,42 @@ export default function ContactUsForm() {
   const {t} = useTranslation();
 
 function sendEmail(){
-  console.log("sending email");
+    const templateParams ={
+      from_name: name,
+      subject: subject,
+      message: message,
+      phone_number: phone_number,
+      email: recipient_email
+    }
+  
+      emailjs.send("service_wb82mbj","template_3hhawub", templateParams, "cUwPNbYIERLQjfccd")
+      .then((response)=>{
+        console.log("EMAIL ENVIADO", response.status, response.text)
+        setName('')
+        setEmail('')
+        setMessages('')
+        setPhone('')
+        setSubject('')
+      }, (err)=> {
+        console.log("ERROR: ", err)
+      })
 
-  if(recipient_email && subject && message && name && phone_number){
-    axios.post("http://localhost:3001/send_email",{
-      recipient_email,
-      subject,
-      name,
-      message,
-      phone_number
-    }).then(()=> alert("Message Send successfuly"))
-      .catch(()=> alert("Ops something went wrong."));
-      return;
-  }else{
-    return alert("Fill in the fields requireds");
-  }
-
-
-   // if(recipient_email === '' && subject === ''  && message === ''  && name === ''  && phone_number === '' ){
-  //    alert("Fill in the fields requireds");
-  //    return;
+  
+  // if(recipient_email && subject && message && name && phone_number){
+  //   axios.post("http://localhost:3001/send_email",{
+  //     recipient_email,
+  //     subject,
+  //     name,
+  //     message,
+  //     phone_number
+  //   }).then(()=> alert("Message Send successfuly"))
+  //     .catch(()=> alert("Ops something went wrong."));
+  //     return;
+  // }else{
+  //   return alert("Fill in the fields requireds");
   // }
-  // else{
 
-  //   const templateParams ={
-  //     from_name: name,
-  //     subject: subject,
-  //     message: message,
-  //     phone_number: phone_number,
-  //     email: recipient_email
-  //   }
-  
-  //     emailjs.send("service_wb82mbj","template_3hhawub", templateParams,"cUwPNbYIERLQjfccd")
-  //     .then((response)=>{
-  //       console.log("EMAIL ENVIADO", response.status, response.text)
-  //       setName('')
-  //       setEmail('')
-  //       setMessages('')
-  //       setPhone('')
-  //       setSubject('')
-  //     }, (err)=> {
-  //       console.log("ERROR: ", err)
-  //     })
 }
-  
-
   return (
     <div >
  {/* <!-- ====== Contact Section Start --> */}
@@ -148,7 +139,7 @@ function sendEmail(){
       </div>
       <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
         <div className="relative rounded-lg bg-white p-8 shadow-lg sm:p-12">
-          <form onSubmit={sendEmail} >
+          <form  onSubmit={sendEmail}>
             <div className="mb-6">
               <input
                 type="text"

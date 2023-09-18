@@ -29,8 +29,9 @@
         "email_underSubmmit1": "We care about the protection of your data.",
         "email_underSubmmit2": "Read our Privacy Policy",
         "1_footer_h2": "About Us",
-        "link_1": "Faq",
+        "link_1": "Faq Clients",
         "link_2": "Why Green?",
+        "link_3": "Faq Produtors",
         "2_footer_h2": "Follow us",
         "1_footer_a": "Twitter",
         "2_footer_a": "Instagram",
@@ -76,11 +77,26 @@
     "7_whygreen_services_h4": "Something",
     "8_whygreen_services_p": "something Something Something",
     "8_whygreen_services_h4": "Regular Updates",
-    "9_whygreen_services_p": "We want this to be you center so feel free to contact us if you encounter any problem or would like something implemented.If implemented you will get a month of free service. "
+    "9_whygreen_services_p": "We want this to be you center so feel free to contact us if you encounter any problem or would like something implemented.If implemented you will get a month of free service. ",
+    "faq_h2_p": "Frequently asked questions from produtors",
+    "faq_h2_c": "Frequently asked questions from users",
+    "faq_h3_1_p": "What is the launch date?",
+    "faq_p_1":"We want to launch around 10th of November, this date will depende on a number of factores but it will not be to far from that. Feel free to sign in to our Newslletter wich will make sure that you are notified when we launch and will give you a 10% discount on your first purchase.",
+    "faq_h3_2_p": "Do Green help me with the packaging and shipping?",
+    "faq_p_2": "We do. It's not our focus, our goal is to help you grow and be autonomous, but if in the beginning you need our help send us an email or call us and we will help you.",
+    "faq_h3_3_p": "How does support work?",
+    "faq_p_3": "We're aware of the importance of well qualified support, that is why we decided that support will be provided on every aspect 24/7.",
+    "faq_p_4.1": "Feel free to ",
+    "faq_p_4.2": "contact us ",
+    "faq_p_4.3": "and we'll help you out as soon as we can.",
 
+    "faq_h3_4_p": "Vocês ajudam com o empacotamento e envio?",
+    "faq_p_5": "Ajudamos, apesar de não ser o nosso foco. O nosso objetivo é ajudar-te a crescer e ser autónomo, mas se no ínicio precisares da nossa ajuda envia-nos um email ou liga-nos e nós iremos ajudar.",
+    "faq_h3_5_p": "Vocês ajudam com o empacotamento e envio?",
+    "faq_p_6": "Ajudamos, apesar de não ser o nosso foco. O nosso objetivo é ajudar-te a crescer e ser autónomo, mas se no ínicio precisares da nossa ajuda envia-nos um email ou liga-nos e nós iremos ajudar.",
+    "faq_h3_6_p": "Vocês ajudam com o empacotamento e envio?",
+    "faq_p_7": "Ajudamos, apesar de não ser o nosso foco. O nosso objetivo é ajudar-te a crescer e ser autónomo, mas se no ínicio precisares da nossa ajuda envia-nos um email ou liga-nos e nós iremos ajudar."
 
-    
-    
     
     
     }
