@@ -9,16 +9,16 @@ export default function WhyGreen() {
     <div>
       {/* <!-- ====== About Section Start --> */}
       <section className="bg-white dark:bg-gray-900">
-    <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+    <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-        <span class="text-terciary-yellowish mb-2 block text-lg font-semibold">
+        <span className="text-terciary-yellowish mb-2 block text-lg font-semibold">
             {t("whygreen_span")}
           </span>
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"> {t("whygreen_h2")}</h2>
             <p className="mb-4"> {t("1_whygreen_p")}</p>
             <p> {t("2_whygreen_p")}</p>
             <Link to={"/signin"} 
-            class="bg-secondary-greenStrong inline-flex items-center justify-center rounded-lg py-4 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10">
+            className="bg-secondary-greenStrong inline-flex items-center justify-center rounded-lg py-4 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10">
            {t("whygreen_link")}
           </Link>
         </div>
@@ -31,32 +31,32 @@ export default function WhyGreen() {
 
 {/* <!-- ====== About Section End --> */}
 {/* <!-- ====== Services Section Start --> */}
-<section class="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
-  <div class="container mx-auto">
-    <div class="-mx-4 flex flex-wrap">
-      <div class="w-full px-4">
-        <div class="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
-          <span class="text-terciary-yellowish mb-2 block text-lg font-semibold">
+<section className="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
+  <div className="container mx-auto">
+    <div className="-mx-4 flex flex-wrap">
+      <div className="w-full px-4">
+        <div className="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
+          <span className="text-terciary-yellowish mb-2 block text-lg font-semibold">
           {t("whygreen_services_span")}
           </span>
           <h2
-            class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]"
+            className="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]"
           >
             {t("whygreen_services_h2")}
           </h2>
-          <p class="text-body-color text-base">
+          <p className="text-body-color text-base">
           {t("1_whygreen_services_p")}
           </p>
         </div>
       </div>
     </div>
-    <div class="-mx-4 flex flex-wrap">
-      <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+    <div className="-mx-4 flex flex-wrap">
+      <div className="w-full px-4 md:w-1/2 lg:w-1/3">
         <div
-          class="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10"
+          className="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10"
         >
           <div
-            class="bg-secondary-greenStrong  mb-8 flex h-[50px] w-[50px] items-center justify-center rounded-2xl"
+            className="bg-secondary-greenStrong  mb-8 flex h-[50px] w-[50px] items-center justify-center rounded-2xl"
           >
             <svg
               width="32"
@@ -71,20 +71,20 @@ export default function WhyGreen() {
               />
             </svg>
           </div>
-          <h4 class="text-dark mb-3 text-xl font-semibold">
+          <h4 className="text-dark mb-3 text-xl font-semibold">
             {t("1_whygreen_services_h4")}
           </h4>
-          <p class="text-body-color">
+          <p className="text-body-color">
            {t("2_whygreen_services_p")}
           </p>
         </div>
       </div>
-      <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+      <div className="w-full px-4 md:w-1/2 lg:w-1/3">
         <div
-          class="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10"
+          className="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10"
         >
           <div
-            class="bg-secondary-greenStrong mb-8 flex h-[50px] w-[50px] items-center justify-center rounded-2xl"
+            className="bg-secondary-greenStrong mb-8 flex h-[50px] w-[50px] items-center justify-center rounded-2xl"
           >
             <svg
               width="39"
@@ -107,20 +107,20 @@ export default function WhyGreen() {
               />
             </svg>
           </div>
-          <h4 class="text-dark mb-3 text-xl font-semibold">
+          <h4 className="text-dark mb-3 text-xl font-semibold">
             {t("3_whygreen_services_h4")}
           </h4>
-          <p class="text-body-color">
+          <p className="text-body-color">
           {t("4_whygreen_services_p")}
           </p>
         </div>
       </div>
-      <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+      <div className="w-full px-4 md:w-1/2 lg:w-1/3">
         <div
-          class="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10"
+          className="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10"
         >
           <div
-            class="bg-secondary-greenStrong mb-8 flex h-[50px] w-[50px] items-center justify-center rounded-2xl"
+            className="bg-secondary-greenStrong mb-8 flex h-[50px] w-[50px] items-center justify-center rounded-2xl"
           >
             <svg
               width="35"
@@ -147,18 +147,18 @@ export default function WhyGreen() {
               />
             </svg>
           </div>
-          <h4 class="text-dark mb-3 text-xl font-semibold">{t("4_whygreen_services_h4")}</h4>
-          <p class="text-body-color">
+          <h4 className="text-dark mb-3 text-xl font-semibold">{t("4_whygreen_services_h4")}</h4>
+          <p className="text-body-color">
            {t("5_whygreen_services_p")}
           </p>
         </div>
       </div>
-      <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+      <div className="w-full px-4 md:w-1/2 lg:w-1/3">
         <div
-          class="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10"
+          className="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10"
         >
           <div
-            class="bg-secondary-greenStrong mb-8 flex h-[50px] w-[50px] items-center justify-center rounded-2xl"
+            className="bg-secondary-greenStrong mb-8 flex h-[50px] w-[50px] items-center justify-center rounded-2xl"
           >
             <svg
               width="35"
@@ -185,18 +185,18 @@ export default function WhyGreen() {
               />
             </svg>
           </div>
-          <h4 class="text-dark mb-3 text-xl font-semibold">{t("6_whygreen_services_h4")}</h4>
-          <p class="text-body-color">
+          <h4 className="text-dark mb-3 text-xl font-semibold">{t("6_whygreen_services_h4")}</h4>
+          <p className="text-body-color">
            {t("7_whygreen_services_p")}
           </p>
         </div>
       </div>
-      <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+      <div className="w-full px-4 md:w-1/2 lg:w-1/3">
         <div
-          class="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10"
+          className="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10"
         >
           <div
-            class="bg-secondary-greenStrong mb-8 flex h-[50px] w-[50px] items-center justify-center rounded-2xl"
+            className="bg-secondary-greenStrong mb-8 flex h-[50px] w-[50px] items-center justify-center rounded-2xl"
           >
             <svg
               width="35"
@@ -211,20 +211,20 @@ export default function WhyGreen() {
               />
             </svg>
           </div>
-          <h4 class="text-dark mb-3 text-xl font-semibold">
+          <h4 className="text-dark mb-3 text-xl font-semibold">
             {t("7_whygreen_services_h4")}
           </h4>
-          <p class="text-body-color">
+          <p className="text-body-color">
        {t("8_whygreen_services_p")}
           </p>
         </div>
       </div>
-      <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+      <div className="w-full px-4 md:w-1/2 lg:w-1/3">
         <div
-          class="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10"
+          className="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10"
         >
           <div
-            class="bg-secondary-greenStrong mb-8 flex h-[50px] w-[50px] items-center justify-center rounded-2xl"
+            className="bg-secondary-greenStrong mb-8 flex h-[50px] w-[50px] items-center justify-center rounded-2xl"
           >
             <svg
               width="35"
@@ -243,8 +243,8 @@ export default function WhyGreen() {
               />
             </svg>
           </div>
-          <h4 class="text-dark mb-3 text-xl font-semibold">{t("8_whygreen_services_h4")}</h4>
-          <p class="text-body-color">
+          <h4 className="text-dark mb-3 text-xl font-semibold">{t("8_whygreen_services_h4")}</h4>
+          <p className="text-body-color">
           {t("9_whygreen_services_p")}
           </p>
         </div>
@@ -253,7 +253,6 @@ export default function WhyGreen() {
   </div>
 </section>
 {/* <!-- ====== Services Section End --> */}
-<Email/>
 <Footer/>
     </div>
   )

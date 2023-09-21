@@ -29,19 +29,21 @@ export default function Footer() {
 </filter>
 </defs>
 </svg>
+<iframe src="https://embeds.beehiiv.com/11b164d0-afd0-4f33-8b75-cce22f2e27eb?slim=true" data-test-id="beehiiv-embed" height="52" frameborder="0" scrolling="no" style={{margin: '0', borderRadius: '0px !important', backgroundColor: 'transparent'}}></iframe>
+
             </div>
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                 <div>
                     <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">{t("1_footer_h2")}</h2>
                     <ul className="text-gray-600 dark:text-gray-400">
                         <li className="mb-4">
-                            <Link to={"faq_b"} className="text-body-color hover:underline">{t("link_1")}</Link>
+                            <Link to={"/faq_b"} className="text-body-color hover:underline">{t("link_1")}</Link>
                         </li>
                         <li className="mb-4">
-                            <Link to={"faq_p"} className="text-body-color hover:underline">{t("link_3")}</Link>
+                            <Link to={"/faq_p"} className="text-body-color hover:underline">{t("link_3")}</Link>
                         </li>
                         <li>
-                            <Link to={"whygreen"} className="text-body-color hover:underline">{t("link_2")}</Link>
+                            <Link to={"/whygreen"} className="text-body-color hover:underline">{t("link_2")}</Link>
                         </li>
                     </ul>
                 </div>
