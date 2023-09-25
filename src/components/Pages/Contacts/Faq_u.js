@@ -1,6 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-
+import Footer from "../HomePage/Footer/Footer";
+import { Link } from 'react-router-dom';
 export default function Faq() {
     const {t} = useTranslation();
   return (
@@ -13,49 +14,51 @@ export default function Faq() {
               <div class="mb-10">
                   <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
                       <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
-                     What is the launch date?
+                     {t("faq_h3_1_p")}
                   </h3>
-                  <p class="text-gray-500 dark:text-gray-400">We want to launch around 10th of November, this date will depende on a number of factores but it will not be to far from that. Feel free to sign in to our Newslletter wich will make sure that you are notified when we launch and will give you a 10% discount on your first purchase.</p>
+                  <p class="text-gray-500 dark:text-gray-400">{t("faq_p_1")}</p>
               </div>
               <div class="mb-10">                        
                   <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
                       <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
-                      What does "lifetime access" exactly mean?
+                    {t("faq_b_1_h3")}
                   </h3>
-                  <p class="text-gray-500 dark:text-gray-400">Once you have purchased either the design, code, or both packages, you will have access to all of the future updates based on the roadmap, free of charge.</p>
+                  <p class="text-gray-500 dark:text-gray-400">{t("faq_b_p_1")}</p>
               </div>
               <div class="mb-10">
                   <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
                       <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
-                      How does support work?
+                    {t("faq_h3_3_p")}
                   </h3>
-                  <p class="text-gray-500 dark:text-gray-400">We're aware of the importance of well qualified support, that is why we decided that support will only be provided by the authors that actually worked on this project.</p>
-                  <p class="text-gray-500 dark:text-gray-400">Feel free to <a href="#0" class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline" target="_blank" rel="noreferrer">contact us</a> and we'll help you out as soon as we can.</p>
+                  <p class="text-gray-500 dark:text-gray-400">{t("faq_p_3")}</p>
+                  <p class="text-gray-500 dark:text-gray-400">{t("faq_p_4.1")} <a href="#0" class="font-medium underline text-terciary-yellowish dark:text-terciary-yellowish hover:no-underline" target="_blank" rel="noreferrer">{t("faq_p_4.2")}</a>{t("faq_p_4.3")}</p>
               </div>
               <div class="mb-10">
                   <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
                       <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
-                      I want to build more than one project. Is that allowed?
+                   {t("faq_b_2_h3")}
                   </h3>
-                  <p class="text-gray-500 dark:text-gray-400">You can use Windster for an unlimited amount of projects, whether it's a personal website, a SaaS app, or a website for a client. As long as you don't build a product that will directly compete with Windster either as a UI kit, theme, or template, it's fine.</p>
-                  <p class="text-gray-500 dark:text-gray-400">Find out more information by <a href="#0" class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline">reading the license</a>.</p>
+                  <p class="text-gray-500 dark:text-gray-400">{t("faq_b_p_2")}</p>
               </div>
           </div>
           <div>
               <div class="mb-10">
                   <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
                       <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
-                      What does "free updates" include?
+                      {t("faq_b_3_h3")}
                   </h3>
-                  <p class="text-gray-500 dark:text-gray-400">The free updates that will be provided is based on the <a href="#0" class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline">roadmap</a> that we have laid out for this project. It is also possible that we will provide extra updates outside of the roadmap as well.</p>
+                  <p class="text-gray-500 dark:text-gray-400">{t("faq_b_p_3")}</p>
+                  <p class="text-gray-500 dark:text-gray-400">{t("faq_b_p_4")} <Link to={""} class="font-medium underline text-terciary-yellowish dark:text-terciary-yellowish hover:no-underline" rel="">{t("faq_b_p_5")}</Link>{t("faq_b_p_6")}</p>
+                  <p class="text-gray-500 dark:text-gray-400">{t("faq_b_p_7")} <Link to={"/contactus"} class="font-medium underline text-terciary-yellowish dark:text-terciary-yellowish hover:no-underline" rel="">{t("faq_b_p_8")} </Link></p>
+
               </div>
               <div class="mb-10">
                   <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
                       <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
-                      What does the free version include?
+                     {t("faq_b_4_h3")}
                   </h3>
-                  <p class="text-gray-500 dark:text-gray-400">The <a href="#0" class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline">free version</a> of Windster includes a minimal style guidelines, component variants, and a dashboard page with the mobile version alongside it.</p>
-                  <p class="text-gray-500 dark:text-gray-400">You can use this version for any purposes, because it is open-source under the MIT license.</p>
+                  <p class="text-gray-500 dark:text-gray-400">{t("faq_b_p_9")} </p>
+                  <p class="text-gray-500 dark:text-gray-400">{t("faq_b_p_10")}<Link to={"/contactus"} class="font-medium underline text-terciary-yellowish dark:text-terciary-yellowish hover:no-underline" rel="">{t("faq_b_p_10.1")}</Link> {t("faq_b_p_10.2")}</p>
               </div>
               <div class="mb-10">
                   <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
@@ -78,6 +81,9 @@ export default function Faq() {
       </div>
   </div>
 </section>
+    <div  className="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
+        <Footer/>
+    </div>
     </div>
   )
 }

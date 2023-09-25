@@ -3,7 +3,7 @@ import "./ContactUs.css";
  import axios from "axios";
 import { useState } from "react";
 import Footer from "../HomePage/Footer/Footer";
-import Email from "../HomePage/EmailSubscription/Email";
+// import Email from "../HomePage/EmailSubscription/Email";
 export default function ContactUsForm() {
 
   const [recipient_email, setEmail] = useState('');

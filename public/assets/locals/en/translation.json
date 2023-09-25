@@ -14,7 +14,7 @@
         "1_feature_section_h3": "Products",
         "feature_section_p2": "Every product must be 100% organic and eco-friendly. Outside that its your creativity that limits you, sell anything for anyone.",
         "2_feature_section_h3": "We worry about the planet",
-        "feature_section_p3": "Every month we donate a percentage of our revenue to ONG's and charitys. Litle by litle let's make the world a litle bit better! We update you about everithing on our Newsletter.",
+        "feature_section_p3": "Every month we donate a percentage of our revenue to ONG's and charitys. Litle by litle let's make the world better! We update you about everithing on our Newsletter.",
         "3_feature_section_h3": "Become a Seller",
         "feature_section_p4": "You need 0 effort to become a seller. Just create an account, login and start to sell. You don't need to pay anything to start.",
         "email_h2": "Sign up for our newsletter",
@@ -84,13 +84,27 @@
     "faq_p_4.2": "contact us ",
     "faq_p_4.3": "and we'll help you out as soon as we can.",
     "faq_h3_4_p": "How much do I get charged?",
-    "faq_p_5": "To begin with, you pay nothing! A fee of 10% is applied for maintenence up to 10.000 weekly transactions, which then drops to 7% after those 10.000 weekly transactions. If you want to have inside analytics about your business, number of sales, margins, net profit, etc.. you have 2 plans. One for €29/month which reduces the fee to 5% plus the analytics or the second that costs €59/month which takes the fee away.",
+    "faq_p_5": "To begin with, you pay nothing! There is only a 10% maintenance fee applied to the final price at checkout, so you never lose money. If you want to have analytics about your business, number of sales, margins, net profit, etc., you can subscribe to a plan after a 7-day free trial. The plan has a fixed cost of €14.99/month so you can have your business in the palm of your hand in just one application.",
     "faq_p_6.1": "Find out more information by ",
-    "faq_p_6.2": "reading this paper about it",
-    "faq_p_7": "Ajudamos, apesar de não ser o nosso foco. O nosso objetivo é ajudar-te a crescer e ser autónomo, mas se no ínicio precisares da nossa ajuda envia-nos um email ou liga-nos e nós iremos ajudar.",
-    "faq_h3_6_p": "Vocês ajudam com o empacotamento e envio?",
-    "faq_p_8": "Ajudamos, apesar de não ser o nosso foco. O nosso objetivo é ajudar-te a crescer e ser autónomo, mas se no ínicio precisares da nossa ajuda envia-nos um email ou liga-nos e nós iremos ajudar."
+    "faq_p_6.2": "reading this paper",
+    "faq_b_1_h3": " How long does shipping take?",
+    "faq_b_p_1": "It depends. We are a platform that provides help, and mechanisms for small produtors that means that usually it will take a litle more than normaly shopping. It also depends on the country you buy from. If you have any doubts you can always contact your produtor.",
+    "faq_b_2_h3" : "What payment methods do you accept?",
+    "faq_b_p_2": "We accept Master/Visa Card, stripe, paypal.",
+    "faq_b_3_h3": "How does returns and refunds work?",
+    "faq_b_p_3": "Firstly it depends on the type of product. All returns and refunds should be made with the produtor thus he is the one that knows if he accepts or not the return. If there is no conclusion we will get into the problem and decide wether or not the costumer get a refund/return.",
+    "faq_b_p_3.1": "All returns and refunds should be made with the produtor thus he is the one that knows if he accepts or not the return. If there is no conclusion we will get into the problem and decide wether or not the costumer deserves a refund/return.",
+    "faq_b_p_4": "To understand fully please read ",
+    "faq_b_p_5": "this paper",
+    "faq_b_p_6": "about it.",
+    "faq_b_p_7": "If you still have doubts feel free to ",
+    "faq_b_p_8": "contact us. ",
+    "faq_b_4_h3": "How do you guarantee that the product is eco-friendly/organic?",
+    "faq_b_p_9": "Before every produtor is allowed to sell we make a verification of the authenticity of the products. If the produtor is already verified you will see a verified icon on their profile.",
+    "faq_b_p_10": "If you receive a product and you aren't sure that it is 100% organic/eco-friendly please let us ",
+    "faq_b_p_10.1": "know",
+    "faq_b_p_10.2": "and we will investigate."
 
-    
-    
+
+   
     }
