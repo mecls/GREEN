@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-
+import women from './8159103_shout_announcement_megaphone_woman_girl_icon.png';
 export default function HeroSection() {
     const {t}= useTranslation();
   return (
@@ -19,7 +19,7 @@ export default function HeroSection() {
             </NavLink> 
         </div>
         <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup"/>
+            <img src={women} alt=""/>
         </div>    
         <div className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
       </div>            

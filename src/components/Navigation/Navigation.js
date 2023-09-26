@@ -17,17 +17,8 @@ import { Link, NavLink, Outlet } from 'react-router-dom';
 import i18n from '../../i18n.js';
 import { useTranslation } from 'react-i18next';
 import cookies from 'js-cookie';
-const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic',  icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Get more clients with no effort', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your data will be safe and secure', icon: FingerPrintIcon },
-  { name: 'Free', description: 'No costs to start - 10% fee on trasanctions', icon: SquaresPlusIcon },
-  { name: 'Payments', description: 'Get payed througth paypal, mbway, credit/debit card and more without effort', icon: ArrowPathIcon },
-]
 
-const callsToAction = [
-  { name: 'Sign Up',icon: PlayCircleIcon },
-]
+
 
 const languages =[
   {
@@ -51,6 +42,19 @@ export default function Navigation() {
   const currentLanguageCode = cookies.get('i18n') || 'en'
   const currentLanguage = languages.find((l) => l.code === currentLanguageCode)
   const { t } = useTranslation()
+
+  const products = [
+    { name: t("nav_seller_1"), description: t("nav_seller_1.1"),  icon: ChartPieIcon },
+    { name: t("nav_seller_2"), description: t("nav_seller_2.1"), icon: CursorArrowRaysIcon },
+    { name: t("nav_seller_3"), description: t("nav_seller_3.1"), icon: FingerPrintIcon },
+    { name: t("nav_seller_4"), description: t("nav_seller_4.1"), icon: SquaresPlusIcon },
+    { name: t("nav_seller_5"), description: t("nav_seller_5.1"), icon: ArrowPathIcon },
+  ]
+
+  const callsToAction = [
+    { name: t("nav_seller_calltoaction"),icon: PlayCircleIcon },
+  ]
+  
 
   useEffect(() => {
     console.log('Setting page stuff')

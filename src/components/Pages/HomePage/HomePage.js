@@ -13,7 +13,7 @@ export default function HomePage() {
         <FeatureSection/>
         <Email/>
         {/* <LogoClouds/> */}
-        <div className="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]"> 
+        <div className="pt-5 pb-12 lg:pt-[120px] lg:pb-[90px]"> 
           <Footer />
         </div>
     </div>

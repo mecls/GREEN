@@ -3,6 +3,7 @@ import "./ContactUs.css";
  import axios from "axios";
 import { useState } from "react";
 import Footer from "../HomePage/Footer/Footer";
+import Email from "../HomePage/EmailSubscription/Email";
 // import Email from "../HomePage/EmailSubscription/Email";
 export default function ContactUsForm() {
 
@@ -184,8 +185,15 @@ function sendEmail(){
       </div>
     </div>
   </div>
+  <section >
+    <div className="pt-20 pb-5 lg:pt-[120px] lg:pb-[90px]">
+    <Email/>
+
+    </div>
+  </section>
 {/* <!-- ====== Contact Section End --> */}
-<div className="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]"> <Footer/>
+<div className="pt-5 pb-12 lg:pt-[120px] lg:pb-[90px]">
+   <Footer/>
 </div>
   </div>
   )
