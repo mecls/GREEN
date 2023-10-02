@@ -68,7 +68,7 @@ function sendEmail(){
             <div className="w-full">
               <h4 className="text-dark mb-1 text-xl font-bold">{t("1_contacts_h4")}</h4>
               <p className="text-body-color text-base">
-              help@green.com              </p>
+              green.ajuda@gmail.com              </p>
             </div>
           </div>
           <div className="mb-8 flex w-full max-w-[370px]">
