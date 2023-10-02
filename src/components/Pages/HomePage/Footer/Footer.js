@@ -54,7 +54,7 @@ export default function Footer() {
                             <a href="https://twitter.com/green_mktplace"  target="_blank" className="text-body-color hover:underline ">{t("1_footer_a")}</a>
                         </li>
                         <li>
-                            <a href="#0" className="text-body-color hover:underline">{t("2_footer_a")}</a>
+                            <a href="https://www.instagram.com/green_mktplace"   target="_blank" className="text-body-color hover:underline">{t("2_footer_a")}</a>
                         </li>
                     </ul>
                 </div>
