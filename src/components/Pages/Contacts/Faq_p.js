@@ -40,7 +40,7 @@ export default function Faq() {
                      {t("faq_h3_4_p")}
                   </h3>
                   <p class="text-gray-500 dark:text-gray-400">{t("faq_p_5")}</p>
-                  <p class="text-gray-500 dark:text-gray-400">{t("faq_p_6.1")}<a href="#0" class="font-medium underline text-terciary-yellowish dark:text-terciary-yellowis hover:no-underline">{t("faq_p_6.2")}</a>.</p>
+                  <p class="text-gray-500 dark:text-gray-400">{t("faq_p_6.1")}<a href='#0' class="font-medium underline text-terciary-yellowish dark:text-terciary-yellowis hover:no-underline">{t("faq_p_6.2")}</a></p>
               </div>
           </div>
           <div>
@@ -50,24 +50,24 @@ export default function Faq() {
                    {t("faq_b_3_h3")}
                   </h3>
                   <p class="text-gray-500 dark:text-gray-400">{t("faq_b_p_3.1")}</p>
-                  <p class="text-gray-500 dark:text-gray-400">{t("faq_b_p_4")}<Link to={""} class="font-medium underline text-terciary-yellowish dark:text-terciary-yellowish hover:no-underline" rel="">{t("faq_b_p_5")} </Link>{t("faq_b_p_6")}</p>
+                  <p class="text-gray-500 dark:text-gray-400">{t("faq_b_p_4")} <a href='#0' class="font-medium underline text-terciary-yellowish dark:text-terciary-yellowish hover:no-underline">{t("faq_b_p_5")}</a></p>
                   <p class="text-gray-500 dark:text-gray-400">{t("faq_b_p_7")}<Link to={"/contactus"} class="font-medium underline text-terciary-yellowish dark:text-terciary-yellowish hover:no-underline" rel="">{t("faq_b_p_8")} </Link></p>
 
               </div>
               <div class="mb-10">
                   <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
                       <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
-                     What do I need to be verified?
+                    {t("faq_b_5_h3")}
                   </h3>
-                  <p class="text-gray-500 dark:text-gray-400">For the process of verification of authenticity we need a proof of the constituints of every product you sell, aswell as a brief description of your production process. If we still need more information you will be promptly asked via email/call.</p>
+                  <p class="text-gray-500 dark:text-gray-400">{t("faq_b_p_11")}</p>
               </div>
               <div class="mb-10">
                   <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
                       <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
-                    When do I get payed?
+                    {t("faq_b_6_h3")}
                   </h3>
-                  <p class="text-gray-500 dark:text-gray-400">Green Marketplace payments are automatically tracked and paid out every two weeks to the bank account you initially set up. Each sale in the 2-week pay period gets added to the payment balance, minus any associated fees that go to Green, such as the maintenance fee.</p>
-                  <p class="text-gray-500 dark:text-gray-400"> After a 2-week payment period ends, the deposit takes two to three days to reach your bank account, the deposit's arrival time depends on the bank you use. In some cases, you may have to wait up to five business days to receive your payment.</p>
+                  <p class="text-gray-500 dark:text-gray-400">{t("faq_b_p_13")}</p>
+                  <p class="text-gray-500 dark:text-gray-400"> {t("faq_b_p_14")}</p>
               </div>
           </div>
       </div>
