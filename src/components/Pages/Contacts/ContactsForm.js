@@ -114,7 +114,7 @@ function sendEmail(){
             </div>
             <div className="w-full">
               <h4 className="text-dark mb-1 text-xl font-bold">{t("3_contacts_h4")}</h4>
-              <p className="text-body-color text-base">bussiness@green.com</p>
+              <p className="text-body-color text-base">green.ajuda.bussiness@gmail.com</p>
             </div>
           </div>
         </div>
