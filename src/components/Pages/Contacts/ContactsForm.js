@@ -18,7 +18,7 @@ function sendEmail(){
 
   
   if(recipient_email && subject && message && name && phone_number){
-    axios.post("https://green-api-olks.onrender.com",{
+    axios.post("https://green-api-olks.onrender.com/send_email",{
       recipient_email,
       subject,
       name,
