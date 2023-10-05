@@ -29,7 +29,7 @@ export default function Footer() {
 </filter>
 </defs>
 </svg>
-<iframe src="https://embeds.beehiiv.com/11b164d0-afd0-4f33-8b75-cce22f2e27eb?slim=true" data-test-id="beehiiv-embed" height="52" frameborder="0" scrolling="no" style={{margin: '0', borderRadius: '0px !important', backgroundColor: 'transparent'}}></iframe>
+<iframe src="https://embeds.beehiiv.com/11b164d0-afd0-4f33-8b75-cce22f2e27eb?slim=true" title="Email Subscription to beehive litle" data-test-id="beehiiv-embed" height="52" frameborder="0" scrolling="no" style={{margin: '0', borderRadius: '0px !important', backgroundColor: 'transparent'}}></iframe>
 
             </div>
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
