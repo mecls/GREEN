@@ -17,7 +17,7 @@ export default function ContactUsForm() {
 function sendEmail(){
 
   
-  if(recipient_email && subject && message && name && phone_number){
+  if(recipient_email && subject && message && name ){
     axios.post("https://green-api-ttvt.onrender.com/send_email",{
       recipient_email,
       subject,
