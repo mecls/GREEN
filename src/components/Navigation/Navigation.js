@@ -154,8 +154,8 @@ export default function Navigation() {
           <NavLink to={"whygreen"} className="text-sm font-semibold leading-6 text-gray-900 pointer">
               {t("nav_whygreen")}
             </NavLink>
-            <NavLink to={"marketplace"} className="text-sm font-semibold leading-6 text-gray-900 pointer">
-            Marketplace
+            <NavLink to={"faq_u"} className="text-sm font-semibold leading-6 text-gray-900 pointer">
+            FAQ
             </NavLink>
             <Link to={"contactus"} className="text-sm font-semibold leading-6 text-gray-900 pointer" >
             {t("nav_contact")} 
