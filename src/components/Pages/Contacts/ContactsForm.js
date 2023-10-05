@@ -25,7 +25,7 @@ function sendEmail(){
       message,
       phone_number
     }).then(()=> alert("Message Send successfuly"))
-      .catch(()=> alert("Ops something went wrong."));
+      .catch(()=> alert("Ops something went wrong. Please try again."));
       return;
   }else{
     return alert("Fill in the fields requireds");
