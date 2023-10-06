@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tilt } from 'react-tilt';
 import './Logo.css';
-import milho from './milho.png';
+import milho from './folhas-de-coca.png';
 
 const defaultOptions = {
 	reverse:        false,  // reverse the tilt direction
