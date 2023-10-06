@@ -14,12 +14,12 @@ export default function WhyGreen() {
         <span className="text-terciary-yellowish mb-2 block text-lg font-semibold">
             {t("whygreen_span")}
           </span>
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"> {t("whygreen_h2")}</h2>
-            <p className="mb-4"> {t("1_whygreen_p")}</p>
-            <p  className="mb-4"> {t("2_whygreen_p")}</p>
+            <h2 className="mb-4 text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white"> {t("whygreen_h2")}</h2>
+            <p className="mb-4 text-xl"> {t("1_whygreen_p")}</p>
+            <p  className="mb-4 text-xl"> {t("2_whygreen_p")}</p>
             
             <Link to={"/signin"} 
-            className="bg-secondary-greenStrong inline-flex items-center justify-center rounded-lg py-4 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10">
+            className="bg-secondary-greenStrong inline-flex items-center justify-center rounded-lg py-4 px-15 text-center text-xl font-bold text-white hover:bg-opacity-90 sm:px-8 lg:px-8 xl:px-10">
            {t("whygreen_link")}
           </Link>
         </div>
@@ -41,11 +41,11 @@ export default function WhyGreen() {
           {t("whygreen_services_span")}
           </span>
           <h2
-            className="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]"
+            className="text-dark mb-4 text-5xl font-bold sm:text-4xl md:text-[40px]"
           >
             {t("whygreen_services_h2")}
           </h2>
-          <p className="text-body-color text-base">
+          <p className="text-body-color text-lg">
           {t("1_whygreen_services_p")}
           </p>
         </div>
@@ -72,10 +72,10 @@ export default function WhyGreen() {
               />
             </svg>
           </div>
-          <h4 className="text-dark mb-3 text-xl font-semibold">
+          <h4 className="text-dark mb-3 text-2xl font-semibold">
             {t("1_whygreen_services_h4")}
           </h4>
-          <p className="text-body-color">
+          <p className="text-body-color text-lg">
            {t("2_whygreen_services_p")}
           </p>
         </div>
@@ -104,10 +104,10 @@ export default function WhyGreen() {
               />
             </svg>
           </div>
-          <h4 className="text-dark mb-3 text-xl font-semibold">
+          <h4 className="text-dark mb-3 text-2xl font-semibold">
             {t("3_whygreen_services_h4")}
           </h4>
-          <p className="text-body-color">
+          <p className="text-body-color text-lg">
           {t("4_whygreen_services_p")}
           </p>
         </div>
@@ -144,8 +144,8 @@ export default function WhyGreen() {
               />
             </svg>
           </div>
-          <h4 className="text-dark mb-3 text-xl font-semibold">{t("4_whygreen_services_h4")}</h4>
-          <p className="text-body-color">
+          <h4 className="text-dark mb-3 text-2xl font-semibold">{t("4_whygreen_services_h4")}</h4>
+          <p className="text-body-color text-lg">
            {t("5_whygreen_services_p")}
           </p>
         </div>

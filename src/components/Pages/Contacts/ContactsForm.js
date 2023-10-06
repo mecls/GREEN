@@ -54,11 +54,11 @@ function sendEmail(){
             {t("1_contacts_span")}
           </span>
           <h2
-            className="text-dark mb-6 text-[32px] font-extrabold sm:text-[40px] lg:text-[36px] xl:text-[40px]"
+            className="text-dark mb-6 text-6xl font-extrabold sm:text-[40px] lg:text-[46px] xl:text-[50px]"
           >
             {t("contacts_h2")}
           </h2>
-          <p className="text-body-color mb-9 text-base leading-relaxed">
+          <p className="text-body-color mb-9 text-lg leading-relaxed">
             {t("1_contacts_p")}
           </p>
           <div className="mb-8 flex w-full max-w-[370px]">
@@ -77,8 +77,8 @@ function sendEmail(){
               </svg>
             </div>
             <div className="w-full">
-              <h4 className="text-dark mb-1 text-xl font-bold">{t("1_contacts_h4")}</h4>
-              <p className="text-body-color text-base">
+              <h4 className="text-dark mb-1 text-2xl font-bold">{t("1_contacts_h4")}</h4>
+              <p className="text-body-color text-lg">
               green.ajuda@gmail.com              </p>
             </div>
           </div>
@@ -98,8 +98,8 @@ function sendEmail(){
               </svg>
             </div>
             <div className="w-full">
-              <h4 className="text-dark mb-1 text-xl font-bold">{t("3_contacts_h4")}</h4>
-              <p className="text-body-color text-base">green.ajuda.bussiness@gmail.com</p>
+              <h4 className="text-dark mb-1 text-2xl font-bold">{t("3_contacts_h4")}</h4>
+              <p className="text-body-color text-lg">green.ajuda.bussiness@gmail.com</p>
             </div>
           </div>
         </div>
