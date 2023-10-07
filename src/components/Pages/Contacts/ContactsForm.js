@@ -32,7 +32,7 @@ function sendEmail(){
       subject,
       name,
       message,
-      phone_number
+      phone_number,
     }).then(()=> alert("Message Send successfuly"))
       .catch(()=> alert("Ops something went wrong. Please try again."));
       return;
