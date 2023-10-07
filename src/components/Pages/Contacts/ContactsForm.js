@@ -14,30 +14,16 @@ export default function ContactUsForm() {
   const [phone_number, setPhone] = useState('');
   const {t} = useTranslation();
 
-function sendEmail(){
-
-  
-  if(recipient_email && subject && message && name && phone_number ){
+function sendEmail(){  
     axios.post("https://green-api-ttvt.onrender.com/send_email",{
       recipient_email,
       subject,
       name,
       message,
-      phone_number
+      phone_number,
     }).then(()=> alert("Message Send successfuly"))
       .catch(()=> alert("Ops something went wrong. Please try again."));
       return;
-  }else {
-    axios.post("https://green-api-ttvt.onrender.com/send_email",{
-      recipient_email,
-      subject,
-      name,
-      message,
-    }).then(()=> alert("Message Send successfuly"))
-      .catch(()=> alert("Ops something went wrong. Please try again."));
-      return;
-  }
-
 }
   return (
     <div >
