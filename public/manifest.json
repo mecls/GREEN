@@ -19,7 +19,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "https://vileaf.co",
+  "start_url": "./?utm_source=web_app_manifest",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
