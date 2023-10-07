@@ -79,10 +79,8 @@
     "faq_h2_p": "Perguntas frequentes dos nossos produtores",
     "faq_h2_c": "Perguntas frequentes dos nossos utilizadores",
     "faq_h3_1_p": "Qual é a data de lançamento? ",
-    "faq_p_1":"Nós pretendemos lançar por volta de Novembro, esta data vai depender de alguns fatores mas não será muito longe da mesma. Fica avontade para te inscreveres na nossa Newsletter para garantir que és notificado quando abrirmos e recebe um desconto de 10% na tua primeira compra.",
-    "faq_h3_2_p": "Vocês ajudam com o empacotamento e envio?",
-    "faq_p_2": "Ajudamos, apesar de não ser o nosso foco. O nosso objetivo é ajudar-te a crescer e ser autónomo, mas se no ínicio precisares da nossa ajuda envia-nos um email ou liga-nos e nós iremos ajudar.",
-    "faq_h3_3_p": "Como é que funciona o vosso suporte?",
+    "faq_p_1":"Nós pretendemos lançar assim que possível, esta data vai depender de alguns fatores mas não será muito longe. Fica avontade para te inscreveres na nossa Newsletter para garantir que és notificado quando abrirmos e recebe um desconto de 10% na tua primeira compra.",
+   "faq_h3_3_p": "Como é que funciona o vosso suporte?",
     "faq_p_3": "Nós reconheçemos a importância de um suporte de qualidade, assim sendo decidimos que daremos suporte em todos os aspetos necessários 24/7.",
     "faq_p_4.1": "Fica à vontade para ",
     "faq_p_4.2": "nos contactar ",
@@ -91,10 +89,10 @@
     "faq_p_5": "Para começar, não pagas nada! É apenas aplicado um fee de manutenção de 10% ao preço final no checkout, logo nunca perdes dinheiro. Se quiseres ter analytics sobre o teu negócio, número de vendas, margens, lucro liquido etc.. poderas subscrever um plano após um teste gratuito de 7 dias. O plano tem um custo fixo de €14,99/mês para poderes ter o teu negócio na palma da tua mão em apenas uma aplicação.",
     "faq_p_6.1": "Descobre mais sobre sobre tudo isto subscrevendo a nossa ",
     "faq_p_6.2": "Newsletter.",
-    "faq_h3_6_p": "Vocês ajudam com o empacotamento e envio?",
-    "faq_p_8": "Ajudamos, apesar de não ser o nosso foco. O nosso objetivo é ajudar-te a crescer e ser autónomo, mas se no ínicio precisares da nossa ajuda envia-nos um email ou liga-nos e nós iremos ajudar.",
+    "faq_h3_6_p": "Vocês tratam do empacotamento e envio?",
+    "faq_p_8": "Sim. O nosso objetivo é ajudar-te a crescer sem problemas, se quiseres que nós Vileaf tratemos dos envios por ti é só escolher uma opção que irá aparecer ao fazer login. Após escolheres essa opção iremos entrar em contacto contigo atráves de email para receberes mais informações.",
     "faq_b_1_h3": "Quanto tempo demora o envio?",
-    "faq_b_p_1": "Depende. Nós somos uma plataforma que oferece ajuda e ferramentas para facilitar pequenos produtores, significa que provavelmente irá demorar um pouco mais do que compras normais. Depende também do país de onde compras. Se tiveres alguma dúvida podes sempre entrar em contacto com o teu produtor ou conosco.",
+    "faq_b_p_1": "Depende. O tempo de envio será indicado no checkout, mas em princípio no máximo cerca de 7 dias úteis. Irás ter 3 opções de envio das quais poderás escolher a que melhor te serve. Se tiveres alguma dúvida podes sempre entrar em contacto com o teu produtor ou conosco.",
     "faq_b_2_h3" : "Que métodos de pagamento são aceites?",
     "faq_b_p_2": "We accept Master/Visa Card, stripe, paypal.",
     "faq_b_3_h3": "Como é que funcionam as devoluções?",
@@ -113,7 +111,10 @@
     "faq_b_p_11": "Para o processo de verificação de autenticidade precisamos de uma prova dos constituintes de cada produto que vendes, assim como uma breve descrição sobre o processo de produção do produto. O próximo passo será uma auditoria feita por uma empresa externa sem custos adicionais. Se ainda precisarmos de mais informação serás devidamente avisado via email/chamada. ",
     "faq_b_6_h3": "Quando é que recebo os pagamentos?",
     "faq_b_p_13": "Os pagamentos do Green Marketplace são seguidos e feitos de duas em duas semanas para a conta bancária informada inicialmente. Cada venda dentro de um período de 2-semanas é adicionado ao teu saldo, menos qualquer custo associado que vai para a Green, tal como o custo de manutenção.",
-    "faq_b_p_14": "Após um periodo de 2-semanas acabar, o depósito demora entre dois a três dias para chegar à tua conta bancária, o tempo de chegada do depósito depende do banco que utilizas. Em alguns casos, podes ter de esperar até cinco dias úteis para receber o teu pagamento."
+    "faq_b_p_14": "Após um periodo de 2-semanas acabar, o depósito demora entre dois a três dias para chegar à tua conta bancária, o tempo de chegada do depósito depende do banco que utilizas. Em alguns casos, podes ter de esperar até cinco dias úteis para receber o teu pagamento.",
+    "faq_b_7_h3": "Vai haver uma app?",
+    "faq_b_p_15": "Vai haver sim uma app. Vai chegar depois do marketplace no site e depois de termos feito algumas perguntas a ti e aos produtores sobre o que estão exatamente à procura. Não queremos despachar a app para que seja exatamente o que tu e os produtores precisam. "
+
 
 
    

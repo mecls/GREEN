@@ -79,9 +79,9 @@
      "faq_h2_p": "Frequently asked questions from producers",
     "faq_h2_c": "Frequently asked questions from users",
     "faq_h3_1_p": "What is the launch date?",
-    "faq_p_1":"We want to launch around November, this date will depende on a number of factores but it will not be to far from that. Feel free to sign in to our Newslletter wich will make sure that you are notified when we launch and will give you a 10% discount on your first purchase.",
+    "faq_p_1":"We want to launch as soon as possible, this date will depende on a number of factores but it will not be to far. Feel free to sign in to our Newslletter wich will make sure that you are notified when we launch and will give you a 10% discount on your first purchase.",
     "faq_h3_2_p": "Do Green help me with the packaging and shipping?",
-    "faq_p_2": "We do. It's not our focus, our goal is to help you grow and be autonomous, but if in the beginning you need our help send us an email or call us and we will help you.",
+    "faq_p_2": "Yes. Our goal is to help you grow smoothly. If you want us Vileaf to take care of the shipments for you, just choose an option that will appear when logging in. After selecting that option, we will contact you via email to provide you with more information.",
     "faq_h3_3_p": "How does support work?",
     "faq_p_3": "We're aware of the importance of well qualified support, that is why we decided that support will be provided on every aspect 24/7.",
     "faq_p_4.1": "Feel free to ",
@@ -92,7 +92,7 @@
     "faq_p_6.1": "Find out more information by subscibing our ",
     "faq_p_6.2": "Newsletter.",
     "faq_b_1_h3": " How long does shipping take?",
-    "faq_b_p_1": "It depends. We are a platform that provides help, and mechanisms for small producers that means that usually it will take a litle more than normaly shopping. It also depends on the country you buy from. If you have any doubts you can always contact your produtor.",
+    "faq_b_p_1": "It depends. The shipping time will be indicated at checkout but in principle it will be a maximum of around 7 business days. You will have three shipping options to choose from so you can select the one that best suits you. If you have any questions, you can always get in touch with your producer or with us.",
     "faq_b_2_h3" : "What payment methods do you accept?",
     "faq_b_p_2": "We accept Master/Visa Card, stripe, paypal.",
     "faq_b_3_h3": "How does returns and refunds work?",
@@ -111,7 +111,9 @@
     "faq_b_p_11": "For the process of verification of authenticity we need a proof of the constituints of every product you sell, aswell as a brief description of your production process. A next step will be an audit made by an external company with no aditional costs. If we still need more information you will be promptly asked via email/call. ",
     "faq_b_6_h3": "When do I get payed?",
     "faq_b_p_13": "Green Marketplace payments are automatically tracked and paid out every two weeks to the bank account you initially set up. Each sale in the 2-week pay period gets added to the payment balance, minus any associated fees that go to Green, such as the maintenance fee.",
-    "faq_b_p_14": "After a 2-week payment period ends, the deposit takes two to three days to reach your bank account, the deposit's arrival time depends on the bank you use. In some cases, you may have to wait up to five business days to receive your payment. "
+    "faq_b_p_14": "After a 2-week payment period ends, the deposit takes two to three days to reach your bank account, the deposit's arrival time depends on the bank you use. In some cases, you may have to wait up to five business days to receive your payment. ",
+    "faq_b_7_h3": "Will it have a mobile app?",
+    "faq_b_p_15": "We will have a mobile app. It will come after the launch of the web marketplace and after we have asked you and the producers what they are exactly looking for. We dont want to rush it so that the app will be exactly what you and the producers need. "
 
 
 
