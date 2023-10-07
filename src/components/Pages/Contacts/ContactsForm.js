@@ -17,7 +17,17 @@ export default function ContactUsForm() {
 function sendEmail(){
 
   
-  if(recipient_email && subject && message && name ){
+  if(recipient_email && subject && message && name && phone_number ){
+    axios.post("https://green-api-ttvt.onrender.com/send_email",{
+      recipient_email,
+      subject,
+      name,
+      message,
+      phone_number
+    }).then(()=> alert("Message Send successfuly"))
+      .catch(()=> alert("Ops something went wrong. Please try again."));
+      return;
+  }else {
     axios.post("https://green-api-ttvt.onrender.com/send_email",{
       recipient_email,
       subject,
@@ -26,21 +36,7 @@ function sendEmail(){
     }).then(()=> alert("Message Send successfuly"))
       .catch(()=> alert("Ops something went wrong. Please try again."));
       return;
-  }else if(recipient_email && subject && message && name && phone_number ){
-    axios.post("https://green-api-ttvt.onrender.com/send_email",{
-      recipient_email,
-      subject,
-      name,
-      message,
-      phone_number,
-    }).then(()=> alert("Message Send successfuly"))
-      .catch(()=> alert("Ops something went wrong. Please try again."));
-      return;
-  }else{
-    return alert("Fill in the fields requireds");
-
   }
-
 
 }
   return (
