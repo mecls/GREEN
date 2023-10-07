@@ -9,8 +9,8 @@ import HomePage from "./components/Pages/HomePage/HomePage";
 import NotFound from "./components/NotFound";
 import WhyGreen from "./components/Pages/WhyGreen/WhyGreen";
 import ContactUs from "./components/Pages/Contacts/ContactUs";
-import Faq_p from "./components/Pages/Contacts/Faq_p";
-import Faq_u from "./components/Pages/Contacts/Faq_u";
+import FaqP from "./components/Pages/Contacts/Faq_p";
+import FaqU from "./components/Pages/Contacts/Faq_u";
 // registration and login
 //  import Signin from "./components/Login/SignIn/SignIn";
 //  import SignUp from "./components/Login/SignUp/SignUp";
@@ -23,10 +23,10 @@ const router = createBrowserRouter(
     
     <Route path="/" element={<Navigation/>} errorElement={<NotFound/>}>
       <Route index element={<HomePage/>}/>
-      <Route path="contactus" element={<ContactUs/>}/>
-      <Route path="whygreen" element={<WhyGreen/>} />
-      <Route path="faq_p" element={<Faq_p/>}/>
-      <Route path="faq_u" element={<Faq_u/>}/>
+      <Route path="/contactus" element={<ContactUs/>}/>
+      <Route path="/whygreen" element={<WhyGreen/>} />
+      <Route path="/faq_p" element={<FaqP/>}/>
+      <Route path="/faq_u" element={<FaqU/>}/>
 
       {/* <Route path="login" element={<Signin/>}/>
         <Route path="signup" element={<SignUp/>}/> */}
