@@ -152,7 +152,7 @@ export default function Navigation() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <NavLink to={"whygreen"} className="text-lg font-semibold leading-6 text-gray-900 pointer">
+          <NavLink to={"whyvileaf"} className="text-lg font-semibold leading-6 text-gray-900 pointer">
               {t("nav_whygreen")}
             </NavLink>
             <NavLink to={"faq_u"} className="text-lg font-semibold leading-6 text-gray-900 pointer">
@@ -233,7 +233,7 @@ export default function Navigation() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <NavLink
-                 to={"whygreen"}
+                 to={"whyvileaf"}
                  onClick={() => setMobileMenuOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
