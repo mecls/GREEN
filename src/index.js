@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'tachyons';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import reportWebVitals from './reportWebVitals';
 // import i18n (needs to be bundled ;)) 
 import './i18n';
@@ -11,7 +10,7 @@ import App from './App';
 
 const loadingMarkup =(
   <div className='py-4 text-center'>
-    <h3>Loadinf ...</h3>
+    <h3>Loading ...</h3>
   </div>
 )
 const root = ReactDOM.createRoot(document.getElementById('root'));
