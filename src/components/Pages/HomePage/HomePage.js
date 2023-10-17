@@ -10,8 +10,9 @@ export default function HomePage() {
   return (
     <div className="HomePage">
         <HeroSection/>
-        <FeatureSection/>
         <Email/>
+
+        <FeatureSection/>
         {/* <LogoClouds/> */}
         <div className="pt-5 pb-12 lg:pt-[120px] lg:pb-[90px]"> 
           <Footer />
