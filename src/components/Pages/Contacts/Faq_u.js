@@ -48,7 +48,7 @@ export default function Faq() {
                       {t("faq_b_3_h3")}
                   </h3>
                   <p class="text-gray-500 dark:text-gray-400">{t("faq_b_p_3")}</p>
-                  <p class="text-gray-500 dark:text-gray-400">{t("faq_b_p_4")} <a href='#0' class="font-medium underline text-terciary-yellowish dark:text-terciary-yellowish hover:no-underline">{t("faq_b_p_5")}</a></p>
+                  <p class="text-gray-500 dark:text-gray-400">{t("faq_b_p_4")} <a href='https://vileaf-newsletter.beehiiv.com/subscribe' target="_blank"  class="font-medium underline text-terciary-yellowish dark:text-terciary-yellowish hover:no-underline">{t("faq_b_p_5")}</a></p>
                   <p class="text-gray-500 dark:text-gray-400">{t("faq_b_p_7")} <Link to={"/contactus"} class="font-medium underline text-terciary-yellowish dark:text-terciary-yellowish hover:no-underline" rel="">{t("faq_b_p_8")} </Link></p>
 
               </div>
