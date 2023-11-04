@@ -6,16 +6,7 @@ export default function NotFound() {
 
   return (
     <div>
-       <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-997BJVMK2H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)}
-  gtag('js', new Date());
-
-  gtag('config', 'G-997BJVMK2H');
-</script>
-    </head>
+    
         <section class="bg-white dark:bg-gray-900">
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div class="mx-auto max-w-screen-sm text-center">
