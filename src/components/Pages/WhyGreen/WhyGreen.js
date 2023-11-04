@@ -7,6 +7,16 @@ export default function WhyGreen() {
   const {t} = useTranslation();
   return (
     <div>
+       <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-997BJVMK2H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)}
+  gtag('js', new Date());
+
+  gtag('config', 'G-997BJVMK2H');
+</script>
+    </head>
       {/* <!-- ====== About Section Start --> */}
       <section className="bg-white dark:bg-gray-900">
     <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">

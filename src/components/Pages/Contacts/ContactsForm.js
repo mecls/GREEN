@@ -27,8 +27,19 @@ function sendEmail(){
 }
   return (
     <div >
+       <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-997BJVMK2H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)}
+  gtag('js', new Date());
+
+  gtag('config', 'G-997BJVMK2H');
+</script>
+    </head>
  {/* <!-- ====== Contact Section Start --> */}
   <div className="container mx-auto">
+    
     <div className="-mx-4 flex flex-wrap lg:justify-between">
       <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
         <div className="mb-12 max-w-[570px] lg:mb-0">

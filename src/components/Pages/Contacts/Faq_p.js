@@ -7,6 +7,16 @@ export default function Faq() {
     const {t} = useTranslation();
   return (
     <div>
+         <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-997BJVMK2H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)}
+  gtag('js', new Date());
+
+  gtag('config', 'G-997BJVMK2H');
+</script>
+    </head>
 <section class="bg-white dark:bg-gray-900">
   <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
       <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">{t("faq_h2_p")}</h2>
