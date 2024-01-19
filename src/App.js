@@ -15,6 +15,8 @@ import FaqU from "./components/Pages/Contacts/Faq_u";
 //  import Signin from "./components/Login/SignIn/SignIn";
 //  import SignUp from "./components/Login/SignUp/SignUp";
 
+// import ReactGA from "react-ga4";
+// ReactGA.initialize("G-997BJVMK2H");
 
 // import { Component } from 'react';
 
